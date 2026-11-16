@@ -1,0 +1,14 @@
+{
+  "split": "test",
+  "model": "gemini-3.1-flash-lite",
+  "total_queries": 30,
+  "errors": 0,
+  "answered_on_answerable": 22,
+  "answerable_total": 24,
+  "abstention_on_unanswerable": 6,
+  "unanswerable_total": 6,
+  "avg_latency_ms": 35932.4,
+  "total_prompt_tokens": 175984,
+  "total_completion_tokens": 3113,
+  "total_cost_usd": 0.028265
+}

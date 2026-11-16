@@ -1,0 +1,37 @@
+{
+  "table": {
+    "passed": 6,
+    "total": 6,
+    "rate": 100.0
+  },
+  "diagram": {
+    "passed": 4,
+    "total": 5,
+    "rate": 80.0
+  },
+  "chart": {
+    "passed": 4,
+    "total": 5,
+    "rate": 80.0
+  },
+  "multi_hop": {
+    "passed": 4,
+    "total": 4,
+    "rate": 100.0
+  },
+  "text": {
+    "passed": 4,
+    "total": 4,
+    "rate": 100.0
+  },
+  "unanswerable": {
+    "passed": 6,
+    "total": 6,
+    "rate": 100.0
+  },
+  "overall": {
+    "passed": 28,
+    "total": 30,
+    "rate": 93.3
+  }
+}

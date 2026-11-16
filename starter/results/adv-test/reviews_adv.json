@@ -1,0 +1,589 @@
+[
+  {
+    "id": "adv_test_01",
+    "category": "table",
+    "answerable": true,
+    "passed": true,
+    "action": "answer",
+    "gold_pages": [
+      17
+    ],
+    "retrieved_pages": [
+      6,
+      17,
+      18
+    ],
+    "citations": [
+      "nasa-se-rev2:17:nasa_p017_table_0"
+    ],
+    "reason": "??t: Truy xu?t ??ng trang [17], tr? l?i ch?nh x?c v? ??y ?? k?m citation ['nasa-se-rev2:17:nasa_p017_table_0']."
+  },
+  {
+    "id": "adv_test_02",
+    "category": "table",
+    "answerable": true,
+    "passed": true,
+    "action": "answer",
+    "gold_pages": [
+      19
+    ],
+    "retrieved_pages": [
+      6,
+      19,
+      28
+    ],
+    "citations": [
+      "nasa-se-rev2:19:nasa_p019_table_0"
+    ],
+    "reason": "??t: Truy xu?t ??ng trang [19], tr? l?i ch?nh x?c v? ??y ?? k?m citation ['nasa-se-rev2:19:nasa_p019_table_0']."
+  },
+  {
+    "id": "adv_test_03",
+    "category": "table",
+    "answerable": true,
+    "passed": true,
+    "action": "answer",
+    "gold_pages": [
+      25
+    ],
+    "retrieved_pages": [
+      3,
+      25,
+      110,
+      116
+    ],
+    "citations": [
+      "nasa-se-rev2:15:nasa_p025_table_0"
+    ],
+    "reason": "??t: Truy xu?t ??ng trang [25], tr? l?i ch?nh x?c v? ??y ?? k?m citation ['nasa-se-rev2:15:nasa_p025_table_0']."
+  },
+  {
+    "id": "adv_test_04",
+    "category": "table",
+    "answerable": true,
+    "passed": true,
+    "action": "answer",
+    "gold_pages": [
+      48
+    ],
+    "retrieved_pages": [
+      6,
+      48
+    ],
+    "citations": [
+      "nasa-se-rev2:48:nasa_p048_table_0"
+    ],
+    "reason": "??t: Truy xu?t ??ng trang [48], tr? l?i ch?nh x?c v? ??y ?? k?m citation ['nasa-se-rev2:48:nasa_p048_table_0']."
+  },
+  {
+    "id": "adv_test_05",
+    "category": "table",
+    "answerable": true,
+    "passed": true,
+    "action": "answer",
+    "gold_pages": [
+      50
+    ],
+    "retrieved_pages": [
+      48,
+      50,
+      242,
+      260
+    ],
+    "citations": [
+      "nasa-se-rev2:50:nasa_p050_table_0"
+    ],
+    "reason": "??t: Truy xu?t ??ng trang [50], tr? l?i ch?nh x?c v? ??y ?? k?m citation ['nasa-se-rev2:50:nasa_p050_table_0']."
+  },
+  {
+    "id": "adv_test_06",
+    "category": "table",
+    "answerable": true,
+    "passed": true,
+    "action": "answer",
+    "gold_pages": [
+      104
+    ],
+    "retrieved_pages": [
+      6,
+      104,
+      211,
+      229
+    ],
+    "citations": [
+      "nasa-se-rev2:104:nasa_p104_table_0"
+    ],
+    "reason": "??t: Truy xu?t ??ng trang [104], tr? l?i ch?nh x?c v? ??y ?? k?m citation ['nasa-se-rev2:104:nasa_p104_table_0']."
+  },
+  {
+    "id": "adv_test_07",
+    "category": "diagram",
+    "answerable": true,
+    "passed": true,
+    "action": "answer",
+    "gold_pages": [
+      15
+    ],
+    "retrieved_pages": [
+      5,
+      15,
+      66,
+      119,
+      236
+    ],
+    "citations": [
+      "nasa-se-rev2:5:nasa_p005_text_0"
+    ],
+    "reason": "??t: Truy xu?t ??ng trang [15], tr? l?i ch?nh x?c v? ??y ?? k?m citation ['nasa-se-rev2:5:nasa_p005_text_0']."
+  },
+  {
+    "id": "adv_test_08",
+    "category": "diagram",
+    "answerable": true,
+    "passed": true,
+    "action": "answer",
+    "gold_pages": [
+      16
+    ],
+    "retrieved_pages": [
+      5,
+      15,
+      16,
+      18,
+      123
+    ],
+    "citations": [
+      "nasa-se-rev2:16:nasa_p016_text_0"
+    ],
+    "reason": "??t: Truy xu?t ??ng trang [16], tr? l?i ch?nh x?c v? ??y ?? k?m citation ['nasa-se-rev2:16:nasa_p016_text_0']."
+  },
+  {
+    "id": "adv_test_09",
+    "category": "diagram",
+    "answerable": true,
+    "passed": true,
+    "action": "answer",
+    "gold_pages": [
+      54
+    ],
+    "retrieved_pages": [
+      53,
+      54,
+      55,
+      76,
+      83
+    ],
+    "citations": [
+      "nasa-se-rev2:54:nasa_p054_text_0"
+    ],
+    "reason": "??t: Truy xu?t ??ng trang [54], tr? l?i ch?nh x?c v? ??y ?? k?m citation ['nasa-se-rev2:54:nasa_p054_text_0']."
+  },
+  {
+    "id": "adv_test_10",
+    "category": "diagram",
+    "answerable": true,
+    "passed": false,
+    "action": "abstain",
+    "gold_pages": [
+      61
+    ],
+    "retrieved_pages": [
+      5,
+      43,
+      61,
+      78
+    ],
+    "citations": [],
+    "reason": "Kh?ng ??t (False Abstention): Retriever t?m ??ng trang [61] nh?ng trang n?y ch?a ???c g?n c? has_visual=True l?c index n?n thi?u PNG ??nh k?m cho vision model."
+  },
+  {
+    "id": "adv_test_11",
+    "category": "diagram",
+    "answerable": true,
+    "passed": true,
+    "action": "answer",
+    "gold_pages": [
+      106
+    ],
+    "retrieved_pages": [
+      5,
+      106,
+      119
+    ],
+    "citations": [
+      "nasa-se-rev2:106:nasa_p106_text_0"
+    ],
+    "reason": "??t: Truy xu?t ??ng trang [106], tr? l?i ch?nh x?c v? ??y ?? k?m citation ['nasa-se-rev2:106:nasa_p106_text_0']."
+  },
+  {
+    "id": "adv_test_12",
+    "category": "chart",
+    "answerable": true,
+    "passed": true,
+    "action": "answer",
+    "gold_pages": [
+      23
+    ],
+    "retrieved_pages": [
+      5,
+      22,
+      23,
+      35
+    ],
+    "citations": [
+      "nasa-se-rev2:23:nasa_p023_text_0"
+    ],
+    "reason": "??t: Truy xu?t ??ng trang [23], tr? l?i ch?nh x?c v? ??y ?? k?m citation ['nasa-se-rev2:23:nasa_p023_text_0']."
+  },
+  {
+    "id": "adv_test_13",
+    "category": "chart",
+    "answerable": true,
+    "passed": false,
+    "action": "abstain",
+    "gold_pages": [
+      81
+    ],
+    "retrieved_pages": [
+      5,
+      77,
+      81,
+      196
+    ],
+    "citations": [],
+    "reason": "Kh?ng ??t (False Abstention): Retriever t?m ??ng trang [81] nh?ng trang n?y ch?a ???c g?n c? has_visual=True l?c index n?n thi?u PNG ??nh k?m cho vision model."
+  },
+  {
+    "id": "adv_test_14",
+    "category": "chart",
+    "answerable": true,
+    "passed": true,
+    "action": "answer",
+    "gold_pages": [
+      149
+    ],
+    "retrieved_pages": [
+      5,
+      149,
+      150,
+      151,
+      152
+    ],
+    "citations": [
+      "nasa-se-rev2:149:nasa_p149_text_0"
+    ],
+    "reason": "??t: Truy xu?t ??ng trang [149], tr? l?i ch?nh x?c v? ??y ?? k?m citation ['nasa-se-rev2:149:nasa_p149_text_0']."
+  },
+  {
+    "id": "adv_test_15",
+    "category": "chart",
+    "answerable": true,
+    "passed": true,
+    "action": "answer",
+    "gold_pages": [
+      221
+    ],
+    "retrieved_pages": [
+      205,
+      216,
+      219,
+      221,
+      223
+    ],
+    "citations": [
+      "nasa-se-rev2:221:nasa_p221_text_0",
+      "nasa-se-rev2:205:nasa_p205_text_0"
+    ],
+    "reason": "??t: Truy xu?t ??ng trang [221], tr? l?i ch?nh x?c v? ??y ?? k?m citation ['nasa-se-rev2:221:nasa_p221_text_0', 'nasa-se-rev2:205:nasa_p205_text_0']."
+  },
+  {
+    "id": "adv_test_16",
+    "category": "chart",
+    "answerable": true,
+    "passed": true,
+    "action": "answer",
+    "gold_pages": [
+      223
+    ],
+    "retrieved_pages": [
+      5,
+      219,
+      221,
+      223
+    ],
+    "citations": [
+      "nasa-se-rev2:213:nasa_p223_text_0"
+    ],
+    "reason": "??t: Truy xu?t ??ng trang [223], tr? l?i ch?nh x?c v? ??y ?? k?m citation ['nasa-se-rev2:213:nasa_p223_text_0']."
+  },
+  {
+    "id": "adv_test_17",
+    "category": "multi_hop",
+    "answerable": true,
+    "passed": true,
+    "action": "answer",
+    "gold_pages": [
+      19,
+      28
+    ],
+    "retrieved_pages": [
+      19,
+      28,
+      217
+    ],
+    "citations": [
+      "nasa-se-rev2:217:nasa_p217_table_0"
+    ],
+    "reason": "??t: Truy xu?t ??ng trang [19, 28], tr? l?i ch?nh x?c v? ??y ?? k?m citation ['nasa-se-rev2:217:nasa_p217_table_0']."
+  },
+  {
+    "id": "adv_test_18",
+    "category": "multi_hop",
+    "answerable": true,
+    "passed": true,
+    "action": "answer",
+    "gold_pages": [
+      48,
+      49
+    ],
+    "retrieved_pages": [
+      48,
+      49
+    ],
+    "citations": [
+      "nasa-se-rev2:48:nasa_p048_table_0",
+      "nasa-se-rev2:49:nasa_p049_table_0"
+    ],
+    "reason": "??t: Truy xu?t ??ng trang [48, 49], tr? l?i ch?nh x?c v? ??y ?? k?m citation ['nasa-se-rev2:48:nasa_p048_table_0', 'nasa-se-rev2:49:nasa_p049_table_0']."
+  },
+  {
+    "id": "adv_test_19",
+    "category": "multi_hop",
+    "answerable": true,
+    "passed": true,
+    "action": "answer",
+    "gold_pages": [
+      149,
+      152
+    ],
+    "retrieved_pages": [
+      5,
+      149,
+      150,
+      151,
+      152
+    ],
+    "citations": [
+      "nasa-se-rev2:149:nasa_p149_text_0",
+      "nasa-se-rev2:152:nasa_p152_text_0"
+    ],
+    "reason": "??t: Truy xu?t ??ng trang [149, 152], tr? l?i ch?nh x?c v? ??y ?? k?m citation ['nasa-se-rev2:149:nasa_p149_text_0', 'nasa-se-rev2:152:nasa_p152_text_0']."
+  },
+  {
+    "id": "adv_test_20",
+    "category": "multi_hop",
+    "answerable": true,
+    "passed": true,
+    "action": "answer",
+    "gold_pages": [
+      17,
+      171
+    ],
+    "retrieved_pages": [
+      6,
+      17,
+      171
+    ],
+    "citations": [
+      "nasa-se-rev2:17:nasa_p017_table_0",
+      "nasa-se-rev2:171:nasa_p171_table_0"
+    ],
+    "reason": "??t: Truy xu?t ??ng trang [17, 171], tr? l?i ch?nh x?c v? ??y ?? k?m citation ['nasa-se-rev2:17:nasa_p017_table_0', 'nasa-se-rev2:171:nasa_p171_table_0']."
+  },
+  {
+    "id": "adv_test_21",
+    "category": "text",
+    "answerable": true,
+    "passed": true,
+    "action": "answer",
+    "gold_pages": [
+      27
+    ],
+    "retrieved_pages": [
+      27,
+      28,
+      272,
+      273,
+      277
+    ],
+    "citations": [
+      "nasa-se-rev2:27:nasa_p027_text_0"
+    ],
+    "reason": "??t: Truy xu?t ??ng trang [27], tr? l?i ch?nh x?c v? ??y ?? k?m citation ['nasa-se-rev2:27:nasa_p027_text_0']."
+  },
+  {
+    "id": "adv_test_22",
+    "category": "text",
+    "answerable": true,
+    "passed": true,
+    "action": "answer",
+    "gold_pages": [
+      158
+    ],
+    "retrieved_pages": [
+      155,
+      157,
+      158,
+      159,
+      160
+    ],
+    "citations": [
+      "nasa-se-rev2:158:nasa_p158_text_0"
+    ],
+    "reason": "??t: Truy xu?t ??ng trang [158], tr? l?i ch?nh x?c v? ??y ?? k?m citation ['nasa-se-rev2:158:nasa_p158_text_0']."
+  },
+  {
+    "id": "adv_test_23",
+    "category": "text",
+    "answerable": true,
+    "passed": true,
+    "action": "answer",
+    "gold_pages": [
+      207
+    ],
+    "retrieved_pages": [
+      207,
+      208,
+      209,
+      210,
+      211
+    ],
+    "citations": [
+      "nasa-se-rev2:207:nasa_p207_text_0"
+    ],
+    "reason": "??t: Truy xu?t ??ng trang [207], tr? l?i ch?nh x?c v? ??y ?? k?m citation ['nasa-se-rev2:207:nasa_p207_text_0']."
+  },
+  {
+    "id": "adv_test_24",
+    "category": "text",
+    "answerable": true,
+    "passed": true,
+    "action": "answer",
+    "gold_pages": [
+      264
+    ],
+    "retrieved_pages": [
+      19,
+      264,
+      265,
+      268,
+      269
+    ],
+    "citations": [
+      "nasa-se-rev2:264:nasa_p264_text_0",
+      "nasa-se-rev2:265:nasa_p265_text_0"
+    ],
+    "reason": "??t: Truy xu?t ??ng trang [264], tr? l?i ch?nh x?c v? ??y ?? k?m citation ['nasa-se-rev2:264:nasa_p264_text_0', 'nasa-se-rev2:265:nasa_p265_text_0']."
+  },
+  {
+    "id": "adv_test_25",
+    "category": "unanswerable",
+    "answerable": false,
+    "passed": true,
+    "action": "abstain",
+    "gold_pages": [],
+    "retrieved_pages": [
+      53,
+      61,
+      172,
+      233,
+      236
+    ],
+    "citations": [],
+    "reason": "??t: T? ch?i ch?nh x?c c?u h?i ngo?i ph?m vi t?i li?u m? kh?ng b?a ??t."
+  },
+  {
+    "id": "adv_test_26",
+    "category": "unanswerable",
+    "answerable": false,
+    "passed": true,
+    "action": "abstain",
+    "gold_pages": [],
+    "retrieved_pages": [
+      2,
+      8,
+      40,
+      62,
+      235
+    ],
+    "citations": [],
+    "reason": "??t: T? ch?i ch?nh x?c c?u h?i ngo?i ph?m vi t?i li?u m? kh?ng b?a ??t."
+  },
+  {
+    "id": "adv_test_27",
+    "category": "unanswerable",
+    "answerable": false,
+    "passed": true,
+    "action": "abstain",
+    "gold_pages": [],
+    "retrieved_pages": [
+      93,
+      119,
+      226,
+      227,
+      232
+    ],
+    "citations": [],
+    "reason": "??t: T? ch?i ch?nh x?c c?u h?i ngo?i ph?m vi t?i li?u m? kh?ng b?a ??t."
+  },
+  {
+    "id": "adv_test_28",
+    "category": "unanswerable",
+    "answerable": false,
+    "passed": true,
+    "action": "abstain",
+    "gold_pages": [],
+    "retrieved_pages": [
+      53,
+      87,
+      123,
+      207,
+      228
+    ],
+    "citations": [],
+    "reason": "??t: T? ch?i ch?nh x?c c?u h?i ngo?i ph?m vi t?i li?u m? kh?ng b?a ??t."
+  },
+  {
+    "id": "adv_test_29",
+    "category": "unanswerable",
+    "answerable": false,
+    "passed": true,
+    "action": "abstain",
+    "gold_pages": [],
+    "retrieved_pages": [
+      3,
+      6,
+      224,
+      236
+    ],
+    "citations": [],
+    "reason": "??t: T? ch?i ch?nh x?c c?u h?i ngo?i ph?m vi t?i li?u m? kh?ng b?a ??t."
+  },
+  {
+    "id": "adv_test_30",
+    "category": "unanswerable",
+    "answerable": false,
+    "passed": true,
+    "action": "abstain",
+    "gold_pages": [],
+    "retrieved_pages": [
+      228,
+      236,
+      262,
+      272,
+      293
+    ],
+    "citations": [],
+    "reason": "??t: T? ch?i ch?nh x?c c?u h?i ngo?i ph?m vi t?i li?u m? kh?ng b?a ??t."
+  }
+]

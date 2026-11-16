@@ -1,0 +1,542 @@
+[
+  {
+    "id": "adv_dev_01",
+    "split": "dev",
+    "category": "table",
+    "answerable": true,
+    "question": "In Table 2.7-1 (NASA System Engineering Competency Model, PDF Page 24), which Competency ID corresponds to 'Technical Requirements Definition' and what Competency Area does it belong to?",
+    "gold_answer": "SE 1.2 (Technical Requirements Definition), belonging to Competency Area SE 1.0 (System Design).",
+    "gold_pages": [
+      24
+    ],
+    "status": "ok",
+    "action": "answer",
+    "answer": "In Table 2.7-1, the Competency ID for 'Technical Requirements Definition' is SE 1.2, and it belongs to the 'System Design' Competency Area.",
+    "citations": [
+      "nasa-se-rev2:24:nasa_p024_table_0"
+    ],
+    "retrieved_pages": [
+      6,
+      24,
+      25
+    ],
+    "attached_images": [
+      "data_adv/pages/page_024.png",
+      "data_adv/pages/page_006.png",
+      "data_adv/pages/page_025.png"
+    ],
+    "latency_ms": 33518.4,
+    "prompt_tokens": 6881,
+    "completion_tokens": 89
+  },
+  {
+    "id": "adv_dev_02",
+    "split": "dev",
+    "category": "table",
+    "answerable": true,
+    "question": "According to the table on PDF Page 26 (SE 3.0 Technical Management), what are the two competencies listed on that page and their IDs?",
+    "gold_answer": "SE 3.5 (Configuration Management) and SE 3.6 (Technical Data Management).",
+    "gold_pages": [
+      26
+    ],
+    "status": "ok",
+    "action": "answer",
+    "answer": "The table on page 16 (which corresponds to the SE 3.0 Technical Management competency area) lists four competencies: SE 3.5 Configuration Management, SE 3.6 Technical Data Management, SE 3.7 Technical Assessment, and SE 3.8 Technical Decision Analysis.",
+    "citations": [
+      "nasa-se-rev2:16:nasa_p026_table_0"
+    ],
+    "retrieved_pages": [
+      6,
+      26,
+      72,
+      140
+    ],
+    "attached_images": [
+      "data_adv/pages/page_026.png",
+      "data_adv/pages/page_006.png"
+    ],
+    "latency_ms": 24759.9,
+    "prompt_tokens": 5694,
+    "completion_tokens": 111
+  },
+  {
+    "id": "adv_dev_03",
+    "split": "dev",
+    "category": "table",
+    "answerable": true,
+    "question": "In the compliance matrix table on PDF Page 51, what Requirement ID corresponds to Section 2.1.6.1 requiring DGA approval of the SEMP and waiver authorizations, and who is the Requirement Owner?",
+    "gold_answer": "Requirement ID SE-06, owned by CD (Center Director).",
+    "gold_pages": [
+      51
+    ],
+    "status": "ok",
+    "action": "answer",
+    "answer": "According to Table 3.11-3 on page 51, the Requirement ID for Section 2.1.6.1 (which requires DGA approval of the SEMP and waiver authorizations) is SE-06, and the Requirement Owner is CD.",
+    "citations": [
+      "nasa-se-rev2:51:nasa_p051_table_0"
+    ],
+    "retrieved_pages": [
+      46,
+      51,
+      69,
+      211
+    ],
+    "attached_images": [
+      "data_adv/pages/page_051.png",
+      "data_adv/pages/page_046.png",
+      "data_adv/pages/page_069.png"
+    ],
+    "latency_ms": 24557.3,
+    "prompt_tokens": 6806,
+    "completion_tokens": 106
+  },
+  {
+    "id": "adv_dev_04",
+    "split": "dev",
+    "category": "table",
+    "answerable": true,
+    "question": "According to the table on PDF Page 57 (Stakeholder Identification throughout the Life Cycle), list the example stakeholders for Pre-Phase A.",
+    "gold_answer": "NASA Headquarters, NASA Centers, Presidential Directives, NASA advisory committees, and the National Academy of Sciences.",
+    "gold_pages": [
+      57
+    ],
+    "status": "ok",
+    "action": "answer",
+    "answer": "Theo Bảng 4.1-1, các ví dụ về các bên liên quan (stakeholders) trong giai đoạn Pre-Phase A bao gồm: NASA Headquarters, NASA Centers, Presidential Directives, NASA advisory committees và the National Academy of Sciences.",
+    "citations": [
+      "nasa-se-rev2:57:nasa_p057_table_0"
+    ],
+    "retrieved_pages": [
+      6,
+      28,
+      57,
+      138
+    ],
+    "attached_images": [
+      "data_adv/pages/page_057.png",
+      "data_adv/pages/page_006.png",
+      "data_adv/pages/page_028.png"
+    ],
+    "latency_ms": 26102.2,
+    "prompt_tokens": 7575,
+    "completion_tokens": 102
+  },
+  {
+    "id": "adv_dev_05",
+    "split": "dev",
+    "category": "diagram",
+    "answerable": true,
+    "question": "In Figure 6.1-1 (Technical Planning Process, PDF Page 125), what are the four sequential central process steps from top to bottom?",
+    "gold_answer": "1) Prepare to conduct technical planning; 2) Define the technical work; 3) Schedule, organize, and cost the technical work; 4) Prepare SEMP and other technical plans.",
+    "gold_pages": [
+      125
+    ],
+    "status": "ok",
+    "action": "answer",
+    "answer": "In Figure 6.1-1, the four sequential central process steps from top to bottom are: 1) Prepare to conduct technical planning, 2) Define the technical work, 3) Schedule, organize, and cost the technical work, and 4) Prepare SEMP and other technical plans.",
+    "citations": [
+      "nasa-se-rev2:115:nasa_p115_visual_0"
+    ],
+    "retrieved_pages": [
+      5,
+      125,
+      140
+    ],
+    "attached_images": [
+      "data_adv/pages/page_125.png",
+      "data_adv/pages/page_005.png"
+    ],
+    "latency_ms": 38551.4,
+    "prompt_tokens": 5328,
+    "completion_tokens": 114
+  },
+  {
+    "id": "adv_dev_06",
+    "split": "dev",
+    "category": "diagram",
+    "answerable": true,
+    "question": "In Figure 6.4-3 (Risk Management Process, PDF Page 151), what are the four inputs shown on the left side entering the process?",
+    "gold_answer": "Project Risk Management Plan, Technical Risk Issues, Technical Risk Status Measurements, and Technical Risk Reporting Requirements.",
+    "gold_pages": [
+      151
+    ],
+    "status": "ok",
+    "action": "answer",
+    "answer": "The four inputs shown on the left side of Figure 6.4-3 entering the Risk Management Process are: 1) Project Risk Management Plan, 2) Technical Risk Issues, 3) Technical Risk Status Measurements, and 4) Technical Risk Reporting Requirements.",
+    "citations": [
+      "nasa-se-rev2:141:nasa_p141_text_0"
+    ],
+    "retrieved_pages": [
+      4,
+      5,
+      146,
+      151
+    ],
+    "attached_images": [
+      "data_adv/pages/page_151.png",
+      "data_adv/pages/page_005.png"
+    ],
+    "latency_ms": 73128.5,
+    "prompt_tokens": 6259,
+    "completion_tokens": 106
+  },
+  {
+    "id": "adv_dev_07",
+    "split": "dev",
+    "category": "diagram",
+    "answerable": true,
+    "question": "In Figure 6.5-2 (Five Elements of Configuration Management, PDF Page 155), what are the elements surrounding Configuration Management?",
+    "gold_answer": "Configuration Planning and Management, Configuration Identification, Configuration Change Management, Configuration Status Accounting, and Configuration Verification (and Audit).",
+    "gold_pages": [
+      155
+    ],
+    "status": "ok",
+    "action": "answer",
+    "answer": "Theo Hình 6.5-2 trong Sổ tay Kỹ thuật Hệ thống NASA, năm yếu tố bao quanh Quản lý Cấu hình (Configuration Management) bao gồm: Quản lý và Lập kế hoạch Cấu hình (Configuration Planning and Management), Nhận dạng Cấu hình (Configuration Identification), Quản lý Thay đổi Cấu hình (Configuration Change Management), Kế toán Trạng thái Cấu hình (Configuration Status Accounting) và Xác minh Cấu hình (Configuration Verification).",
+    "citations": [
+      "nasa-se-rev2:145:nasa_p145_image_0"
+    ],
+    "retrieved_pages": [
+      4,
+      26,
+      155,
+      158,
+      159
+    ],
+    "attached_images": [
+      "data_adv/pages/page_155.png",
+      "data_adv/pages/page_158.png",
+      "data_adv/pages/page_026.png"
+    ],
+    "latency_ms": 27735.1,
+    "prompt_tokens": 6725,
+    "completion_tokens": 153
+  },
+  {
+    "id": "adv_dev_08",
+    "split": "dev",
+    "category": "diagram",
+    "answerable": true,
+    "question": "In Figure 6.8-2 (Risk Analysis of Decision Alternatives, PDF Page 176), what is the label inside the decision diamond, and what are the two subcategories inside the 'Risk Analysis Techniques' box?",
+    "gold_answer": "The decision diamond asks 'Is the ranking/comparison robust?' (Yes/No), and Risk Analysis Techniques contains 'Qualitative Techniques' and 'Quantitative Techniques'.",
+    "gold_pages": [
+      176
+    ],
+    "status": "ok",
+    "action": "answer",
+    "answer": "In Figure 6.8-2, the label inside the decision diamond is 'Net beneficial to reduce uncertainty?'. The two subcategories inside the 'Risk Analysis Techniques' box are 'Qualitative Techniques' and 'Quantitative Techniques'.",
+    "citations": [
+      "nasa-se-rev2:176:nasa_p176_text_0"
+    ],
+    "retrieved_pages": [
+      5,
+      175,
+      176,
+      177,
+      180
+    ],
+    "attached_images": [
+      "data_adv/pages/page_176.png",
+      "data_adv/pages/page_005.png",
+      "data_adv/pages/page_175.png"
+    ],
+    "latency_ms": 27185.4,
+    "prompt_tokens": 7394,
+    "completion_tokens": 99
+  },
+  {
+    "id": "adv_dev_09",
+    "split": "dev",
+    "category": "chart",
+    "answerable": true,
+    "question": "In Figure 4.4-2 (The Doctrine of Successive Refinement, PDF Page 77), what are the four stages around the circular refinement loop?",
+    "gold_answer": "Recognize need/opportunity, Identify and quantify goals, Implement decisions, and Perform mission.",
+    "gold_pages": [
+      77
+    ],
+    "status": "ok",
+    "action": "answer",
+    "answer": "The four stages around the circular refinement loop in Figure 4.4-2 are: Identify and quantify goals, Create concepts, Do trade studies, and Select design.",
+    "citations": [
+      "nasa-se-rev2:77:nasa_p077_text_0"
+    ],
+    "retrieved_pages": [
+      77,
+      78,
+      79,
+      82,
+      169
+    ],
+    "attached_images": [],
+    "latency_ms": 21604.3,
+    "prompt_tokens": 2582,
+    "completion_tokens": 84
+  },
+  {
+    "id": "adv_dev_10",
+    "split": "dev",
+    "category": "chart",
+    "answerable": true,
+    "question": "In Figure G.4-2 (TMA Thought Process, PDF Page 222), what Technology Readiness Level (TRL) is assigned if an identical unit has been successfully operated/launched in an identical configuration/environment ('YES')?",
+    "gold_answer": "TRL 9.",
+    "gold_pages": [
+      222
+    ],
+    "status": "ok",
+    "action": "answer",
+    "answer": "According to Figure G.4-2 (TMA Thought Process), if an identical unit has been successfully operated/launched in an identical configuration/environment, the assigned Technology Readiness Level (TRL) is TRL 9.",
+    "citations": [
+      "nasa-se-rev2:222:nasa_p222_table_0"
+    ],
+    "retrieved_pages": [
+      217,
+      221,
+      222,
+      223
+    ],
+    "attached_images": [
+      "data_adv/pages/page_222.png",
+      "data_adv/pages/page_223.png",
+      "data_adv/pages/page_217.png"
+    ],
+    "latency_ms": 22949.4,
+    "prompt_tokens": 7050,
+    "completion_tokens": 97
+  },
+  {
+    "id": "adv_dev_11",
+    "split": "dev",
+    "category": "multi_hop",
+    "answerable": true,
+    "question": "Compare the two tables on PDF Pages 24 and 25: list all competencies under SE 1.0 (System Design) on Page 24 and SE 2.0 (Product Realization) on Page 25.",
+    "gold_answer": "On Page 24 (SE 1.0 System Design): SE 1.1 Stakeholder Expectation Definition & Management, and SE 1.2 Technical Requirements Definition. On Page 25 (SE 2.0 Product Realization): SE 2.4 Product Validation and SE 2.5 Product Transition.",
+    "gold_pages": [
+      24,
+      25
+    ],
+    "status": "ok",
+    "action": "answer",
+    "answer": "Based on the NASA System Engineering Competency Model, the competencies are categorized as follows:\n\nUnder SE 1.0 (System Design) on page 24:\n- SE 1.1: Stakeholder Expectation Definition & Management\n- SE 1.2: Technical Requirements Definition\n- SE 1.3: Logical Decomposition\n- SE 1.4: Design Solution Definition\n\nUnder SE 2.0 (Product Realization) on pages 24 and 25:\n- SE 2.1: Product Implementation\n- SE 2.2: Product Integration\n- SE 2.3: Product Verification\n- SE 2.4: Product Validation\n- SE 2.5: Product Transition",
+    "citations": [
+      "nasa-se-rev2:24:nasa_p024_table_0",
+      "nasa-se-rev2:25:nasa_p025_table_0"
+    ],
+    "retrieved_pages": [
+      3,
+      24,
+      25
+    ],
+    "attached_images": [
+      "data_adv/pages/page_025.png",
+      "data_adv/pages/page_024.png",
+      "data_adv/pages/page_003.png"
+    ],
+    "latency_ms": 23962.4,
+    "prompt_tokens": 6525,
+    "completion_tokens": 240
+  },
+  {
+    "id": "adv_dev_12",
+    "split": "dev",
+    "category": "multi_hop",
+    "answerable": true,
+    "question": "Using Figure 6.7-1 (Technical Assessment Process, PDF Page 168) and the text on PDF Page 168, what three acronyms represent the technical measures tracked to determine technical progress?",
+    "gold_answer": "MOEs (Measures of Effectiveness), MOPs (Measures of Performance), and TPMs (Technical Performance Measures).",
+    "gold_pages": [
+      168
+    ],
+    "status": "ok",
+    "action": "answer",
+    "answer": "The technical measures tracked to determine technical progress are referred to by the acronyms MOEs (Measures of Effectiveness), MOPs (Measures of Performance), KPPs (Key Performance Parameters), and TPMs (Technical Performance Measures).",
+    "citations": [
+      "nasa-se-rev2:168:nasa_p168_text_0"
+    ],
+    "retrieved_pages": [
+      4,
+      5,
+      125,
+      168,
+      170
+    ],
+    "attached_images": [
+      "data_adv/pages/page_168.png",
+      "data_adv/pages/page_005.png",
+      "data_adv/pages/page_125.png"
+    ],
+    "latency_ms": 23874.5,
+    "prompt_tokens": 7825,
+    "completion_tokens": 100
+  },
+  {
+    "id": "adv_dev_13",
+    "split": "dev",
+    "category": "text",
+    "answerable": true,
+    "question": "According to PDF Page 13 (Section 2.0 Fundamentals of Systems Engineering), how does NASA define 'systems engineering'?",
+    "gold_answer": "A methodical, multi-disciplinary approach for the design, realization, technical management, operations, and retirement of a system.",
+    "gold_pages": [
+      13
+    ],
+    "status": "ok",
+    "action": "answer",
+    "answer": "At NASA, systems engineering is defined as a methodical, multi-disciplinary approach for the design, realization, technical management, operations, and retirement of a system. It is also described as the art and science of developing an operable system capable of meeting requirements within often opposed constraints, as well as a holistic, integrative discipline and a logical way of thinking.",
+    "citations": [
+      "nasa-se-rev2:13:nasa_p013_text_0"
+    ],
+    "retrieved_pages": [
+      13,
+      224,
+      270,
+      276,
+      289
+    ],
+    "attached_images": [
+      "data_adv/pages/page_013.png",
+      "data_adv/pages/page_270.png",
+      "data_adv/pages/page_224.png"
+    ],
+    "latency_ms": 40205.5,
+    "prompt_tokens": 6261,
+    "completion_tokens": 120
+  },
+  {
+    "id": "adv_dev_14",
+    "split": "dev",
+    "category": "text",
+    "answerable": true,
+    "question": "According to PDF Page 157 (Section 6.5 Configuration Management), when is the allocated baseline usually established and what does it initiate?",
+    "gold_answer": "The allocated baseline is usually established at the Preliminary Design Review (PDR) and initiates detailed design for a Configuration Item (CI).",
+    "gold_pages": [
+      157
+    ],
+    "status": "ok",
+    "action": "answer",
+    "answer": "The allocated baseline is typically established at the successful completion of the Preliminary Design Review (PDR). It initiates the detailed design for a Configuration Item (CI).",
+    "citations": [
+      "nasa-se-rev2:157:nasa_p157_text_0"
+    ],
+    "retrieved_pages": [
+      154,
+      155,
+      156,
+      157,
+      186
+    ],
+    "attached_images": [
+      "data_adv/pages/page_157.png",
+      "data_adv/pages/page_155.png",
+      "data_adv/pages/page_186.png"
+    ],
+    "latency_ms": 24146.0,
+    "prompt_tokens": 5796,
+    "completion_tokens": 83
+  },
+  {
+    "id": "adv_dev_15",
+    "split": "dev",
+    "category": "text",
+    "answerable": true,
+    "question": "According to PDF Page 183 (Appendix A Acronyms), what do the acronyms AADL and AD2 stand for?",
+    "gold_answer": "AADL stands for Architecture Analysis and Design Language, and AD2 stands for Advancement Degree of Difficulty.",
+    "gold_pages": [
+      183
+    ],
+    "status": "ok",
+    "action": "answer",
+    "answer": "According to Appendix A on page 183, AADL stands for Architecture Analysis and Design Language, and AD2 stands for Advancement Degree of Difficulty Assessment.",
+    "citations": [
+      "nasa-se-rev2:183:nasa_p183_text_0"
+    ],
+    "retrieved_pages": [
+      183,
+      186,
+      217,
+      219
+    ],
+    "attached_images": [
+      "data_adv/pages/page_183.png",
+      "data_adv/pages/page_217.png",
+      "data_adv/pages/page_186.png"
+    ],
+    "latency_ms": 24113.7,
+    "prompt_tokens": 6313,
+    "completion_tokens": 84
+  },
+  {
+    "id": "adv_dev_16",
+    "split": "dev",
+    "category": "unanswerable",
+    "answerable": false,
+    "question": "What was the exact total launch mass in kilograms of the Space Shuttle Discovery on STS-133?",
+    "gold_answer": "Kh?ng ?? b?ng ch?ng ?? tr? l?i.",
+    "gold_pages": [],
+    "status": "ok",
+    "action": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "retrieved_pages": [
+      8,
+      27,
+      44,
+      109,
+      225
+    ],
+    "attached_images": [
+      "data_adv/pages/page_008.png",
+      "data_adv/pages/page_027.png"
+    ],
+    "latency_ms": 25106.6,
+    "prompt_tokens": 4765,
+    "completion_tokens": 24
+  },
+  {
+    "id": "adv_dev_17",
+    "split": "dev",
+    "category": "unanswerable",
+    "answerable": false,
+    "question": "How many hexagonal primary mirror segments are installed on the James Webb Space Telescope according to this handbook?",
+    "gold_answer": "Kh?ng ?? b?ng ch?ng ?? tr? l?i.",
+    "gold_pages": [],
+    "status": "ok",
+    "action": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "retrieved_pages": [
+      2,
+      40,
+      59,
+      100,
+      178
+    ],
+    "attached_images": [],
+    "latency_ms": 36876.6,
+    "prompt_tokens": 2374,
+    "completion_tokens": 24
+  },
+  {
+    "id": "adv_dev_18",
+    "split": "dev",
+    "category": "unanswerable",
+    "answerable": false,
+    "question": "What is the annual budget allocation in millions of dollars for NASA's Mars Sample Return program in FY 2025?",
+    "gold_answer": "Kh?ng ?? b?ng ch?ng ?? tr? l?i.",
+    "gold_pages": [],
+    "status": "ok",
+    "action": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "retrieved_pages": [
+      8,
+      31,
+      43,
+      132,
+      187
+    ],
+    "attached_images": [
+      "data_adv/pages/page_008.png"
+    ],
+    "latency_ms": 37735.8,
+    "prompt_tokens": 3681,
+    "completion_tokens": 24
+  }
+]
