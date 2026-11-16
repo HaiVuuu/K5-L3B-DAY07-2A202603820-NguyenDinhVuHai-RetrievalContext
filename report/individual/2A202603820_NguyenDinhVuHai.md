@@ -109,5 +109,54 @@
   - **Đánh đổi & giới hạn:**
     1. *Đánh đổi chất lượng — độ trễ — chi phí:* Tăng budget từ `800` lên `3600` ký tự và mở rộng neighbor làm tăng ~73% lượng prompt tokens (`20.5K -> 35.7K` trên `dev`), nhưng chi phí thực tế vẫn cực thấp (`<$0.007` cho cả tập `dev`). Độ trễ ~43–47s/câu chủ yếu do `--delay 20` giây/call để tránh vượt ngưỡng 15 RPM của gói miễn phí.
     2. *Giới hạn:* Truy vấn mở rộng neighbor chỉ xét `±1` đoạn liền kề trong cùng/liền trang nên chưa tối ưu cho câu hỏi tổng hợp nhiều chương xa nhau; đồng thời hệ thống chưa áp dụng reranker cross-encoder chuyên biệt.
-
+    
 ## Thử thách nâng cao (nếu thực hiện)
+
+- **Tài liệu, nguồn, quyền sử dụng, số trang và phiên bản:**
+  - **Tài liệu & phiên bản:** *NASA Systems Engineering Handbook* (`NASA/SP-2007-6105 Rev2`).
+  - **Nguồn truy cập công khai:** `https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf`
+  - **Quyền sử dụng:** Public Domain (ấn phẩm của Chính phủ Hoa Kỳ — NASA, được phép sử dụng, trích xuất và tái tạo tự do cho mục đích học thuật/nghiên cứu).
+  - **Số trang:** **297 trang** đầy đủ từ trang bìa đến hết danh mục tài liệu tham khảo.
+- **Cách xử lý text, bảng, ảnh, biểu đồ; phạm vi index và phần chưa xử lý:**
+  - **Phạm vi index (`data_adv/index_stats.json`):** Index toàn bộ **297 / 297 trang** (`0` trang bị bỏ qua), tạo thành **338 chunks** lưu tại `data_adv/chunks_adv.json` và collection ChromaDB `nasa_se_adv` (`sentence-transformers/all-MiniLM-L6-v2`, cosine similarity), thời gian index `345.48s`.
+  - **Cách xử lý từng loại nội dung (`scripts/index_multimodal.py` & `starter/agentic_adv.py`):**
+    - *Text:* Tách theo đoạn văn trên toàn bộ `297` trang, lưu kèm metadata `source_id` (`nasa-se-rev2`), số trang PDF (`page`) và tọa độ `bbox`.
+    - *Bảng (`38` trang có bảng):* Trích xuất bằng `pymupdf` (`page.find_tables()`) sang **Markdown table** giữ nguyên cấu trúc hàng/cột và `bbox`, đồng thời render PNG trang gốc (`dpi=150`) để kiểm chứng trực quan.
+    - *Ảnh, sơ đồ và biểu đồ (`80` trang có đồ họa):* Phát hiện các trang chứa ảnh raster ($\ge 120 \times 120$ px) hoặc mật độ nét vẽ vector cao (`len(drawings) > 50`), render PNG lưu tại `data_adv/pages/page_XXX.png`. Khi truy vấn trúng trang có `has_visual=True`, agent đính kèm tối đa 3 ảnh PNG trang gốc qua `inlineData` (`image/png`) trực tiếp vào `gemini-3.1-flash-lite` để đọc trục, đơn vị, chú giải và luồng sơ đồ.
+  - **Phần chưa xử lý / hạn chế lúc index:** Các trang chỉ chứa sơ đồ/đồ thị vector tối giản có ít hơn 50 nét vẽ (`len(drawings) <= 50`, cụ thể là Page 61 và Page 81) chưa được tự động gắn cờ `has_visual=True` nên chưa render PNG đính kèm lúc suy luận.
+- **Cách chia benchmark, schema evidence, model và cấu hình đã chốt trên dev:**
+  - **Bộ benchmark (`data_adv/questions_adv.json`, 48 câu, tách biệt hoàn toàn `dev` và `test`):**
+    - **`dev` (18 câu):** 15 câu có đáp án phủ đủ 5 nhóm (4 Bảng, 4 Sơ đồ, 2 Biểu đồ/thang đo, 2 Multi-hop, 3 Text) + 3 câu thiếu bằng chứng (`adv_dev_01`–`adv_dev_18`).
+    - **`test` (30 câu):** 24 câu có đáp án chia đúng định mức (6 Bảng, 5 Ảnh/sơ đồ, 5 Biểu đồ, 4 Multi-hop, 4 Text) + 6 câu thiếu bằng chứng (`adv_test_01`–`adv_test_30`).
+  - **Schema evidence:** Mỗi bản ghi gồm `id`, `split`, `category`, `answerable`, `question`, `answer` (hoặc chuỗi từ chối chuẩn `"Không đủ bằng chứng để trả lời."`), `gold_pages` (số trang PDF gốc) và `evidence` (mô tả bảng/hàng/cột/nhãn trục/đơn vị cụ thể).
+  - **Model & cấu hình đã chốt trên `dev`:** Hybrid RRF retrieval (`1.5 * TF-IDF + 1.2 * BM25 + 1.0 * Dense` + page-anchor boost, `top_k=5` + sibling chunks cùng trang) kết hợp multimodal vision (`gemini-3.1-flash-lite`, `temperature=0.0`, đính kèm tối đa 3 page PNG). Trên `dev` đạt **18 / 18 (100%)** (`15/15` có đáp án, `3/3` từ chối đúng, `0` lỗi, chi phí `$0.016931` USD, latency trung bình `30,895.2 ms`).
+
+| Nhóm test | Đạt / tổng | Tỷ lệ | Lỗi / nhận xét |
+|---|---|---|---|
+| Bảng | 6 / 6 | 100.0% | Tra cứu chính xác hàng, cột, so sánh giữa các loại sứ mệnh Type A–F và bảng quy trình AS9100/V&V (`adv_test_01`–`06`). |
+| Ảnh, sơ đồ | 4 / 5 | 80.0% | Đạt 4/5 (`adv_test_07`–`09, 11`); lỗi 1 câu (`adv_test_10`, Page 61) do sơ đồ vector ít nét vẽ nên chưa gắn cờ render PNG. |
+| Biểu đồ | 4 / 5 | 80.0% | Đạt 4/5 (`adv_test_12, 14`–`16`: đọc đúng `90%`, `500–1000x`, thang TRL 1–9, ma trận màu TRL); lỗi 1 câu (`adv_test_13`, Page 81) do đồ thị vector chưa render PNG. |
+| Multi-hop | 4 / 4 | 100.0% | Tổng hợp chính xác bằng chứng từ 2 trang khác nhau (`19+28`, `48+49`, `149+152`, `17+171`) (`adv_test_17`–`20`). |
+| Text | 4 / 4 | 100.0% | Trích xuất chính xác điều kiện NPR, baselines, phân biệt `Shall` vs `Will`, và hoạt động Phase E (`adv_test_21`–`24`). |
+| Thiếu bằng chứng | 6 / 6 | 100.0% | Từ chối an toàn toàn bộ 6 câu hỏi ngoài phạm vi tài liệu (Artemis II, Perseverance, Saturn V, Dragon 2, Europa Clipper, Starship) (`adv_test_25`–`30`). |
+| **Toàn bộ** | **28 / 30** | **93.3%** | **Vượt ngưỡng yêu cầu $\ge 90\%$ (`27/30`)** với `0` lỗi hệ thống/API. |
+
+- **Trace, nhãn và evidence từng câu; thời gian, chi phí, lỗi hệ thống:**
+  - **File trace & nhãn đối chiếu từng câu:** `starter/results/adv-dev/` (`traces.json`, `summary.json`) và `starter/results/adv-test/` (`traces.json`, `summary.json`, `reviews_adv.json` ghi nhãn `passed` và lý do đối chiếu PDF gốc cho từng câu trong 30 câu `test`, `group_summary.json`).
+  - **Thời gian, chi phí & lỗi (`test`, 30 câu):** Latency trung bình `35,932.4 ms`/câu (đã bao gồm `--delay 20` giây/request để tuân thủ giới hạn Free Tier), tổng token `175,984` prompt + `3,113` completion = **`$0.028265` USD**; **`0` lỗi hệ thống / timeout / API**.
+  - **Phân tích 2 lỗi trên `test`:** Cả 2 câu không đạt (`adv_test_10` và `adv_test_13`) đều truy xuất trúng trang nguồn (`page_hit=True` tại Page 61 và Page 81), nhưng do ngưỡng phát hiện đồ họa vector `len(drawings) > 50` bỏ sót 2 hình vẽ vector tối giản này lúc index nên `image_path` rỗng, khiến agent từ chối an toàn (`false abstention`).
+- **Giới hạn, cách tái lập và đường dẫn benchmark:**
+  - **Giới hạn:** Việc lọc trang trực quan dựa vào ngưỡng số nét vẽ (`> 50` drawings) có thể bỏ sót các biểu đồ/sơ đồ vector đơn giản; có thể khắc phục ở bước index bằng cách render PNG cho mọi trang có tiêu đề `"Figure "` ở đầu dòng.
+  - **Đường dẫn benchmark & script:**
+    - Bộ câu hỏi & đáp án chuẩn: `data_adv/questions_adv.json` (`18 dev` + `30 test`)
+    - Chunks & thống kê index: `data_adv/chunks_adv.json`, `data_adv/index_stats.json`
+    - Script index & multimodal agent: `scripts/index_multimodal.py`, `starter/agentic_adv.py`
+  - **Lệnh tái lập:**
+    ```powershell
+    $PY = "..\K5-L3B-DAY06-2A202603820-DataIngestion\.venv\Scripts\python.exe"
+    New-Item -ItemType Directory -Force -Path data_adv | Out-Null
+    curl.exe -L "[https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf](https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf)" -o "data_adv/report.pdf"
+    & $PY scripts/index_multimodal.py
+    & $PY starter/agentic_adv.py --split dev --delay 20 --max-requests 25 --skip-existing --output starter/results/adv-dev
+    & $PY starter/agentic_adv.py --split test --delay 20 --max-requests 35 --skip-existing --output starter/results/adv-test
+    ```

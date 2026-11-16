@@ -11,3 +11,5 @@ chroma_db/
 # Local datasets and generated output; share permitted artifacts deliberately
 starter/data/
 starter/results/
+
+data_adv/

@@ -1,0 +1,565 @@
+[
+  {
+    "id": "adv_dev_01",
+    "split": "dev",
+    "category": "table",
+    "answerable": true,
+    "question": "In Table 2.7-1 (NASA System Engineering Competency Model, PDF Page 24), which Competency ID corresponds to 'Technical Requirements Definition' and what Competency Area does it belong to?",
+    "answer": "SE 1.2 (Technical Requirements Definition), belonging to Competency Area SE 1.0 (System Design).",
+    "gold_pages": [
+      24
+    ],
+    "evidence": "PDF Page 24 Table 2.7-1: Competency Area SE 1.0 System Design -> Competency SE 1.2 Technical Requirements Definition."
+  },
+  {
+    "id": "adv_dev_02",
+    "split": "dev",
+    "category": "table",
+    "answerable": true,
+    "question": "According to the table on PDF Page 26 (SE 3.0 Technical Management), what are the two competencies listed on that page and their IDs?",
+    "answer": "SE 3.5 (Configuration Management) and SE 3.6 (Technical Data Management).",
+    "gold_pages": [
+      26
+    ],
+    "evidence": "PDF Page 26 Table: SE 3.0 Technical Management -> SE 3.5 Configuration Management, SE 3.6 Technical Data Management."
+  },
+  {
+    "id": "adv_dev_03",
+    "split": "dev",
+    "category": "table",
+    "answerable": true,
+    "question": "In the compliance matrix table on PDF Page 51, what Requirement ID corresponds to Section 2.1.6.1 requiring DGA approval of the SEMP and waiver authorizations, and who is the Requirement Owner?",
+    "answer": "Requirement ID SE-06, owned by CD (Center Director).",
+    "gold_pages": [
+      51
+    ],
+    "evidence": "PDF Page 51 Table: Req ID SE-06 | SE NPR Section 2.1.6.1 | Owner: CD | Comply: Fully Compliant."
+  },
+  {
+    "id": "adv_dev_04",
+    "split": "dev",
+    "category": "table",
+    "answerable": true,
+    "question": "According to the table on PDF Page 57 (Stakeholder Identification throughout the Life Cycle), list the example stakeholders for Pre-Phase A.",
+    "answer": "NASA Headquarters, NASA Centers, Presidential Directives, NASA advisory committees, and the National Academy of Sciences.",
+    "gold_pages": [
+      57
+    ],
+    "evidence": "PDF Page 57 Table: Pre-Phase A -> NASA Headquarters, NASA Centers, Presidential Directives, NASA advisory committees, the National Academy of Sciences."
+  },
+  {
+    "id": "adv_dev_05",
+    "split": "dev",
+    "category": "diagram",
+    "answerable": true,
+    "question": "In Figure 6.1-1 (Technical Planning Process, PDF Page 125), what are the four sequential central process steps from top to bottom?",
+    "answer": "1) Prepare to conduct technical planning; 2) Define the technical work; 3) Schedule, organize, and cost the technical work; 4) Prepare SEMP and other technical plans.",
+    "gold_pages": [
+      125
+    ],
+    "evidence": "PDF Page 125 Figure 6.1-1 vertical sequence of 4 process boxes."
+  },
+  {
+    "id": "adv_dev_06",
+    "split": "dev",
+    "category": "diagram",
+    "answerable": true,
+    "question": "In Figure 6.4-3 (Risk Management Process, PDF Page 151), what are the four inputs shown on the left side entering the process?",
+    "answer": "Project Risk Management Plan, Technical Risk Issues, Technical Risk Status Measurements, and Technical Risk Reporting Requirements.",
+    "gold_pages": [
+      151
+    ],
+    "evidence": "PDF Page 151 Figure 6.4-3 left-hand input arrows."
+  },
+  {
+    "id": "adv_dev_07",
+    "split": "dev",
+    "category": "diagram",
+    "answerable": true,
+    "question": "In Figure 6.5-2 (Five Elements of Configuration Management, PDF Page 155), what are the elements surrounding Configuration Management?",
+    "answer": "Configuration Planning and Management, Configuration Identification, Configuration Change Management, Configuration Status Accounting, and Configuration Verification (and Audit).",
+    "gold_pages": [
+      155
+    ],
+    "evidence": "PDF Page 155 Figure 6.5-2 five surrounding boxes."
+  },
+  {
+    "id": "adv_dev_08",
+    "split": "dev",
+    "category": "diagram",
+    "answerable": true,
+    "question": "In Figure 6.8-2 (Risk Analysis of Decision Alternatives, PDF Page 176), what is the label inside the decision diamond, and what are the two subcategories inside the 'Risk Analysis Techniques' box?",
+    "answer": "The decision diamond asks 'Is the ranking/comparison robust?' (Yes/No), and Risk Analysis Techniques contains 'Qualitative Techniques' and 'Quantitative Techniques'.",
+    "gold_pages": [
+      176
+    ],
+    "evidence": "PDF Page 176 Figure 6.8-2 central block and decision diamond."
+  },
+  {
+    "id": "adv_dev_09",
+    "split": "dev",
+    "category": "chart",
+    "answerable": true,
+    "question": "In Figure 4.4-2 (The Doctrine of Successive Refinement, PDF Page 77), what are the four stages around the circular refinement loop?",
+    "answer": "Recognize need/opportunity, Identify and quantify goals, Implement decisions, and Perform mission.",
+    "gold_pages": [
+      77
+    ],
+    "evidence": "PDF Page 77 Figure 4.4-2 circular loop labels."
+  },
+  {
+    "id": "adv_dev_10",
+    "split": "dev",
+    "category": "chart",
+    "answerable": true,
+    "question": "In Figure G.4-2 (TMA Thought Process, PDF Page 222), what Technology Readiness Level (TRL) is assigned if an identical unit has been successfully operated/launched in an identical configuration/environment ('YES')?",
+    "answer": "TRL 9.",
+    "gold_pages": [
+      222
+    ],
+    "evidence": "PDF Page 222 Figure G.4-2 top decision box -> YES -> TRL 9."
+  },
+  {
+    "id": "adv_dev_11",
+    "split": "dev",
+    "category": "multi_hop",
+    "answerable": true,
+    "question": "Compare the two tables on PDF Pages 24 and 25: list all competencies under SE 1.0 (System Design) on Page 24 and SE 2.0 (Product Realization) on Page 25.",
+    "answer": "On Page 24 (SE 1.0 System Design): SE 1.1 Stakeholder Expectation Definition & Management, and SE 1.2 Technical Requirements Definition. On Page 25 (SE 2.0 Product Realization): SE 2.4 Product Validation and SE 2.5 Product Transition.",
+    "gold_pages": [
+      24,
+      25
+    ],
+    "evidence": "PDF Page 24 Table (SE 1.1, SE 1.2) + PDF Page 25 Table (SE 2.4, SE 2.5)."
+  },
+  {
+    "id": "adv_dev_12",
+    "split": "dev",
+    "category": "multi_hop",
+    "answerable": true,
+    "question": "Using Figure 6.7-1 (Technical Assessment Process, PDF Page 168) and the text on PDF Page 168, what three acronyms represent the technical measures tracked to determine technical progress?",
+    "answer": "MOEs (Measures of Effectiveness), MOPs (Measures of Performance), and TPMs (Technical Performance Measures).",
+    "gold_pages": [
+      168
+    ],
+    "evidence": "PDF Page 168 Figure 6.7-1 + text: 'These measures are also referred to as MOEs, MOPs, and TPMs.'"
+  },
+  {
+    "id": "adv_dev_13",
+    "split": "dev",
+    "category": "text",
+    "answerable": true,
+    "question": "According to PDF Page 13 (Section 2.0 Fundamentals of Systems Engineering), how does NASA define 'systems engineering'?",
+    "answer": "A methodical, multi-disciplinary approach for the design, realization, technical management, operations, and retirement of a system.",
+    "gold_pages": [
+      13
+    ],
+    "evidence": "PDF Page 13 first paragraph under 2.0 Fundamentals of Systems Engineering."
+  },
+  {
+    "id": "adv_dev_14",
+    "split": "dev",
+    "category": "text",
+    "answerable": true,
+    "question": "According to PDF Page 157 (Section 6.5 Configuration Management), when is the allocated baseline usually established and what does it initiate?",
+    "answer": "The allocated baseline is usually established at the Preliminary Design Review (PDR) and initiates detailed design for a Configuration Item (CI).",
+    "gold_pages": [
+      157
+    ],
+    "evidence": "PDF Page 157 text on Allocated Baseline."
+  },
+  {
+    "id": "adv_dev_15",
+    "split": "dev",
+    "category": "text",
+    "answerable": true,
+    "question": "According to PDF Page 183 (Appendix A Acronyms), what do the acronyms AADL and AD2 stand for?",
+    "answer": "AADL stands for Architecture Analysis and Design Language, and AD2 stands for Advancement Degree of Difficulty.",
+    "gold_pages": [
+      183
+    ],
+    "evidence": "PDF Page 183 Appendix A Table: AADL | Architecture Analysis and Design Language; AD2 | Advancement Degree of Difficulty."
+  },
+  {
+    "id": "adv_dev_16",
+    "split": "dev",
+    "category": "unanswerable",
+    "answerable": false,
+    "question": "What was the exact total launch mass in kilograms of the Space Shuttle Discovery on STS-133?",
+    "answer": "Kh?ng ?? b?ng ch?ng ?? tr? l?i.",
+    "gold_pages": [],
+    "evidence": "Not present in NASA Systems Engineering Handbook (NASA/SP-2007-6105 Rev2)."
+  },
+  {
+    "id": "adv_dev_17",
+    "split": "dev",
+    "category": "unanswerable",
+    "answerable": false,
+    "question": "How many hexagonal primary mirror segments are installed on the James Webb Space Telescope according to this handbook?",
+    "answer": "Kh?ng ?? b?ng ch?ng ?? tr? l?i.",
+    "gold_pages": [],
+    "evidence": "JWST mirror segment count is not stated in this handbook."
+  },
+  {
+    "id": "adv_dev_18",
+    "split": "dev",
+    "category": "unanswerable",
+    "answerable": false,
+    "question": "What is the annual budget allocation in millions of dollars for NASA's Mars Sample Return program in FY 2025?",
+    "answer": "Kh?ng ?? b?ng ch?ng ?? tr? l?i.",
+    "gold_pages": [],
+    "evidence": "FY 2025 budget figures are not included in this handbook."
+  },
+  {
+    "id": "adv_test_01",
+    "split": "test",
+    "category": "table",
+    "answerable": true,
+    "question": "In Table 2.1-1 (Alignment of the 17 SE Processes to AS9100, PDF Page 17), which AS9100 Requirements correspond to 'Stakeholder Expectations' and 'Technical Requirements Definition'?",
+    "answer": "'Stakeholder Expectations' aligns to 'Customer Requirements', and 'Technical Requirements Definition' aligns to 'Planning of Product Realization'.",
+    "gold_pages": [
+      17
+    ],
+    "evidence": "PDF Page 17 Table 2.1-1 rows 1?2."
+  },
+  {
+    "id": "adv_test_02",
+    "split": "test",
+    "category": "table",
+    "answerable": true,
+    "question": "In Table 2.2-1 (Project Life Cycle Phases, PDF Page 19), compare the Purpose and Typical Outcomes of Pre-Phase A (Concept Studies) versus Phase A (Concept and Technology Development).",
+    "answer": "Pre-Phase A (Pre-Formulation) produces a broad spectrum of ideas/alternatives to determine feasibility and scope, yielding feasible system concepts (simulations, analysis, study reports, models, mock-ups). Phase A (Formulation) determines feasibility/desirability of a suggested new system and establishes an initial baseline compatible with NASA strategic plans, yielding system concept definition and trade study definition.",
+    "gold_pages": [
+      19
+    ],
+    "evidence": "PDF Page 19 Table 2.2-1 Pre-Phase A and Phase A rows."
+  },
+  {
+    "id": "adv_test_03",
+    "split": "test",
+    "category": "table",
+    "answerable": true,
+    "question": "According to the table on PDF Page 25 (SE 2.0 Product Realization), what is the difference between SE 2.4 (Product Validation) and SE 2.5 (Product Transition)?",
+    "answer": "SE 2.4 (Product Validation) confirms that a verified end product satisfies stakeholder expectations for its intended use in its intended environment and resolves anomalies prior to transition, whereas SE 2.5 (Product Transition) transitions the verified and validated product to the customer at the next level in the system structure (including handling, storing, shipping, site preparation, and documentation).",
+    "gold_pages": [
+      25
+    ],
+    "evidence": "PDF Page 25 Table SE 2.4 and SE 2.5 rows."
+  },
+  {
+    "id": "adv_test_04",
+    "split": "test",
+    "category": "table",
+    "answerable": true,
+    "question": "In Table 3.11-1 (Example of Program/Project Types, PDF Page 48), compare Type A and Type F missions across both 'Description of the Types of Mission' and 'Priority and Acceptable Risk Level'.",
+    "answer": "Type A covers Human Space Flight or Very Large Science/Robotic Missions with high priority and very low (minimized) risk, whereas Type F covers Aircraft or Ground-based technology demonstrations with low to very low priority and high risk.",
+    "gold_pages": [
+      48
+    ],
+    "evidence": "PDF Page 48 Table 3.11-1 Type A and Type F columns."
+  },
+  {
+    "id": "adv_test_05",
+    "split": "test",
+    "category": "table",
+    "answerable": true,
+    "question": "In the table on PDF Page 50 (Example Project Plan Control Plans), how does the requirement for a 'Risk Management Plan' differ across Type A?C missions versus Type D?E and Type F missions?",
+    "answer": "A Risk Management Plan is 'Fully Compliant' for Type A, Type B, and Type C missions, 'Tailor' for Type D and Type E missions, and 'Not Applicable' for Type F missions.",
+    "gold_pages": [
+      50
+    ],
+    "evidence": "PDF Page 50 Table row 'Risk Management Plan' across Type A through Type F."
+  },
+  {
+    "id": "adv_test_06",
+    "split": "test",
+    "category": "table",
+    "answerable": true,
+    "question": "In Table 5.3-1 (Example Information in Verification Procedures and Reports, PDF Page 104), what must be included regarding test article identification and configuration in a Verification Procedure, and how are deviations recorded in a Verification Report?",
+    "answer": "A Verification Procedure must include nomenclature and identification of the test article or material, and identification of the test configuration plus any differences from flight operational configuration; a Verification Report records a description of verification activity including deviations from nominal results (discrepancies).",
+    "gold_pages": [
+      104
+    ],
+    "evidence": "PDF Page 104 Table 5.3-1 Verification Procedure and Verification Report columns."
+  },
+  {
+    "id": "adv_test_07",
+    "split": "test",
+    "category": "diagram",
+    "answerable": true,
+    "question": "In Figure 2.0-1 (SE in Context of Overall Project Management, PDF Page 15), what three primary categories form the Venn diagram, and what items appear in the central 'Common Areas' intersection?",
+    "answer": "The three primary categories are 'Systems Engineering', 'Common Areas', and 'PP&C'. The 'Common Areas' intersection includes Stakeholders, Risks, Configuration Management, Data Management, Reviews, and Schedule.",
+    "gold_pages": [
+      15
+    ],
+    "evidence": "PDF Page 15 Figure 2.0-1 Venn diagram labels."
+  },
+  {
+    "id": "adv_test_08",
+    "split": "test",
+    "category": "diagram",
+    "answerable": true,
+    "question": "In Figure 2.1-1 (The Systems Engineering Engine, PDF Page 16), how many numbered processes are shown in total, what are the three main functional groupings inside the engine, and what do the large green directional arrows represent?",
+    "answer": "There are 17 numbered processes (1 through 17) grouped into 'System Design Processes', 'Technical Management Processes', and 'Product Realization Processes', with large green arrows showing 'Requirements Flow Down' (left) and 'Realized Products' (right).",
+    "gold_pages": [
+      16
+    ],
+    "evidence": "PDF Page 16 Figure 2.1-1 labels and arrows."
+  },
+  {
+    "id": "adv_test_09",
+    "split": "test",
+    "category": "diagram",
+    "answerable": true,
+    "question": "In Figure 4.0-1 (Interrelationships among the System Design Processes, PDF Page 54), what four sub-processes form the circular iterative loop inside 'Design Solution Definition', and what six categories are listed under 'Derived and Allocated Requirements'?",
+    "answer": "The circular loop connects 'Success Criteria', 'Develop Design', 'Compare', and 'Evaluate'. The six categories of Derived and Allocated Requirements are Functional, Performance, Interface, Operational, Safety, and 'ilities'.",
+    "gold_pages": [
+      54
+    ],
+    "evidence": "PDF Page 54 Figure 4.0-1 circular loop and Derived and Allocated Requirements box."
+  },
+  {
+    "id": "adv_test_10",
+    "split": "test",
+    "category": "diagram",
+    "answerable": true,
+    "question": "In Figure 4.1-3 (Example of a Lunar Sortie DRM Early in the Life Cycle, PDF Page 61), what altitude is labeled for the Low Lunar Orbit, and what happens to the Earth Departure Stage and Ascent Stage in the mission profile?",
+    "answer": "Low Lunar Orbit is labeled at an altitude of 100 km; the Earth Departure Stage is separated/jettisoned after trans-lunar injection and the Ascent Stage is expended ('Ascent Stage Expended').",
+    "gold_pages": [
+      61
+    ],
+    "evidence": "PDF Page 61 Figure 4.1-3 mission profile labels ('100 km', 'Low Lunar Orbit', 'Earth Departure Stage', 'Ascent Stage Expended')."
+  },
+  {
+    "id": "adv_test_11",
+    "split": "test",
+    "category": "diagram",
+    "answerable": true,
+    "question": "In Figure 5.3-2 (Example of End-to-End Data Flow for a Scientific Satellite Mission, PDF Page 106), what are the four vertical system columns, the two horizontal process flows, and the five external stimuli?",
+    "answer": "The four vertical columns are 'EXTERNAL SYSTEMS', 'GROUND SYSTEM', 'FLIGHT SYSTEM', and 'EXTERNAL STIMULI'; the two horizontal flows are 'Uplink Process' (top) and 'Downlink Process' (bottom); the five external stimuli are X-rays, Visible, Ultraviolet, Infrared, and Microwave.",
+    "gold_pages": [
+      106
+    ],
+    "evidence": "PDF Page 106 Figure 5.3-2 columns, process arrows, and external stimuli nodes."
+  },
+  {
+    "id": "adv_test_12",
+    "split": "test",
+    "category": "chart",
+    "answerable": true,
+    "question": "In Figure 2.5-1 (Life-Cycle Cost Impacts from Early Phase Decision-Making, PDF Page 23), compare the percentage of life-cycle cost committed by the end of Phase A (MCR/SRR) versus the cost escalation multiplier (500?1000x) if defects are fixed later in operations.",
+    "answer": "Approximately 90% of life-cycle cost is committed/determined by early phase decisions (around MCR/end of Phase A, while only ~20% has been spent), and fixing design defects later in the life cycle increases cost by 500?1000x compared to fixing them in the concept phase.",
+    "gold_pages": [
+      23
+    ],
+    "evidence": "PDF Page 23 Figure 2.5-1 curves and callout labels (90%, 20%, MCR, 500?1000x)."
+  },
+  {
+    "id": "adv_test_13",
+    "split": "test",
+    "category": "chart",
+    "answerable": true,
+    "question": "In Figure 4.4-3 (A Quantitative Objective Function, Dependent on Life Cycle Cost and All Aspects of Effectiveness, PDF Page 81), what are the exact labels and units on the X-axis and Y-axis, and which three design alternative points are plotted on the graph?",
+    "answer": "The X-axis is 'Life-Cycle Cost, Expressed in Constant Dollars', the Y-axis is 'Some Aspect of Effectiveness, Expressed in Quantitative Units', and the three plotted alternative points are labeled 'A', 'B', and 'C'.",
+    "gold_pages": [
+      81
+    ],
+    "evidence": "PDF Page 81 Figure 4.4-3 axes and plotted points A, B, C."
+  },
+  {
+    "id": "adv_test_14",
+    "split": "test",
+    "category": "chart",
+    "answerable": true,
+    "question": "In Figure 6.4-2 (Risk as an Aggregate Set of Risk Triplets, PDF Page 149), what three visual components/distributions make up each risk triplet summed into 'RISK ='?",
+    "answer": "Each risk triplet combines a scenario flowchart ('Structure of Scenario'), a probability density bell curve ('Likelihood and Its Uncertainty'), and a consequence distribution starburst ('Consequence Severity and Its Uncertainty').",
+    "gold_pages": [
+      149
+    ],
+    "evidence": "PDF Page 149 Figure 6.4-2 stacked triplet graphics and labels."
+  },
+  {
+    "id": "adv_test_15",
+    "split": "test",
+    "category": "chart",
+    "answerable": true,
+    "question": "In Figure G.4-1 (Technology Readiness Levels, PDF Page 221), what is the numerical range of the TRL scale from lowest to highest, and what does TRL 1 represent versus TRL 9?",
+    "answer": "The TRL scale spans from TRL 1 (lowest: basic principles observed and reported) to TRL 9 (highest: actual system 'flight proven' through successful mission operations).",
+    "gold_pages": [
+      221
+    ],
+    "evidence": "PDF Page 221 Figure G.4-1 TRL 1 through TRL 9 thermometer/scale."
+  },
+  {
+    "id": "adv_test_16",
+    "split": "test",
+    "category": "chart",
+    "answerable": true,
+    "question": "In Figure G.4-3 (TRL Assessment Matrix, PDF Page 223), what do the four legend colors (Red, Yellow, Green, White) represent on the TRL scale, and which attributes are marked 'X' for row '1.1.3 Electrical Components'?",
+    "answer": "Red = Below TRL 3, Yellow = TRL 3, 4 & 5, Green = TRL 6 and above, and White = Unknown. Row '1.1.3 Electrical Components' has 'X' marked under Prototype, Space Environment, Form, Fit, and Function.",
+    "gold_pages": [
+      223
+    ],
+    "evidence": "PDF Page 223 Figure G.4-3 color legend and row 1.1.3 markers."
+  },
+  {
+    "id": "adv_test_17",
+    "split": "test",
+    "category": "multi_hop",
+    "answerable": true,
+    "question": "Combining Table 2.2-1 (PDF Page 19) and Figure 3.0-1 / Table on PDF Page 28, which Key Decision Point (KDP) marks the transition out of Pre-Phase A (Concept Studies) into Phase A, and which KDP approves transition into Phase C (Implementation)?",
+    "answer": "KDP A marks the transition from Pre-Phase A (Concept Studies) into Phase A, while KDP C approves transition into Phase C (Final Design and Fabrication / Implementation).",
+    "gold_pages": [
+      19,
+      28
+    ],
+    "evidence": "PDF Page 19 Table 2.2-1 + PDF Page 28 Table/Diagram KDP A and KDP C."
+  },
+  {
+    "id": "adv_test_18",
+    "split": "test",
+    "category": "multi_hop",
+    "answerable": true,
+    "question": "Across Table 3.11-1 (PDF Page 48) and the technical products table on PDF Page 49, what type of mission is Type D and how is its 'Concept Documentation' handled compared to Type A?",
+    "answer": "Type D is 'Smaller Science or Technology Missions (ISS payload)' with low priority and high acceptable risk (Page 48), and its Concept Documentation is marked 'Tailor' whereas Type A is 'Fully Compliant' (Page 49).",
+    "gold_pages": [
+      48,
+      49
+    ],
+    "evidence": "PDF Page 48 Table 3.11-1 + PDF Page 49 Table Concept Documentation row."
+  },
+  {
+    "id": "adv_test_19",
+    "split": "test",
+    "category": "multi_hop",
+    "answerable": true,
+    "question": "Using Figure 6.4-1 (Risk Scenario Development, PDF Page 149) and Figure 6.4-4 (PDF Page 152), what three numbered questions define risk scenario development, and what two methodologies interact to form Risk Management (RM)?",
+    "answer": "The three questions on Page 149 are: '1. What can go wrong?', '2. How frequently does it happen?', and '3. What are the consequences?'. On Page 152 (Figure 6.4-4), Risk Management (RM) is the interaction of Risk-Informed Decision Making (RIDM) and Continuous Risk Management (CRM).",
+    "gold_pages": [
+      149,
+      152
+    ],
+    "evidence": "PDF Page 149 Figure 6.4-1 + PDF Page 152 Figure 6.4-4."
+  },
+  {
+    "id": "adv_test_20",
+    "split": "test",
+    "category": "multi_hop",
+    "answerable": true,
+    "question": "Combining Table 2.1-1 (PDF Page 17) and Table 6.7-1 (PDF Page 171), what AS9100 requirement aligns with 'Stakeholder Expectations', and what is the purpose of the Mission Concept Review (MCR) on Page 171?",
+    "answer": "Stakeholder Expectations aligns with 'Customer Requirements' (Page 17), and the Mission Concept Review (MCR) affirms the mission need and examines the proposed mission's objectives and the concept for meeting those objectives (Page 171).",
+    "gold_pages": [
+      17,
+      171
+    ],
+    "evidence": "PDF Page 17 Table 2.1-1 + PDF Page 171 Table 6.7-1 MCR row."
+  },
+  {
+    "id": "adv_test_21",
+    "split": "test",
+    "category": "text",
+    "answerable": true,
+    "question": "According to PDF Page 27 (Section 3.0 NASA Program/Project Life Cycle), which specific NASA Procedural Requirements (NPR) documents govern: (a) space flight projects, (b) information technology, (c) NASA research and technology, and (d) software?",
+    "answer": "Space flight projects are governed by NPR 7120.5; information technology by NPR 7120.7; NASA research and technology by NPR 7120.8; and software by NPR 7150.2.",
+    "gold_pages": [
+      27
+    ],
+    "evidence": "PDF Page 27 bulleted list of NPR governing documents."
+  },
+  {
+    "id": "adv_test_22",
+    "split": "test",
+    "category": "text",
+    "answerable": true,
+    "question": "According to PDF Page 158 (Section 6.5 Configuration Management), at which review does the 'As-Deployed Baseline' occur?",
+    "answer": "The As-Deployed Baseline occurs at the Operational Readiness Review (ORR).",
+    "gold_pages": [
+      158
+    ],
+    "evidence": "PDF Page 158 bullet: 'As-Deployed Baseline: The as-deployed baseline occurs at the ORR.'"
+  },
+  {
+    "id": "adv_test_23",
+    "split": "test",
+    "category": "text",
+    "answerable": true,
+    "question": "According to Appendix C (How to Write a Good Requirement?Checklist, PDF Page 207), what is the distinction between using the word 'Shall' versus 'Will' in requirement statements?",
+    "answer": "'Shall' is used to state a binding requirement, whereas 'Will' is used to state facts or a declaration of purpose (not a mandatory requirement).",
+    "gold_pages": [
+      207
+    ],
+    "evidence": "PDF Page 207 Section C.1 Use of Correct Terms: 'Shall = requirement', 'Will = facts or declaration of purpose'."
+  },
+  {
+    "id": "adv_test_24",
+    "split": "test",
+    "category": "text",
+    "answerable": true,
+    "question": "According to Appendix T (Systems Engineering in Phase E, PDF Page 264), how does the emphasis on system design processes in normal Phase E operations compare to earlier development phases?",
+    "answer": "In general, normal Phase E activities reflect a reduced emphasis on system design processes compared to earlier development phases.",
+    "gold_pages": [
+      264
+    ],
+    "evidence": "PDF Page 264 Section T.1 Overview."
+  },
+  {
+    "id": "adv_test_25",
+    "split": "test",
+    "category": "unanswerable",
+    "answerable": false,
+    "question": "What are the full names of the four astronauts assigned to the Artemis II lunar flyby crew according to this handbook?",
+    "answer": "Kh?ng ?? b?ng ch?ng ?? tr? l?i.",
+    "gold_pages": [],
+    "evidence": "Artemis II crew names are not in NASA/SP-2007-6105 Rev2."
+  },
+  {
+    "id": "adv_test_26",
+    "split": "test",
+    "category": "unanswerable",
+    "answerable": false,
+    "question": "On what exact calendar date did the Perseverance rover land in Jezero Crater on Mars according to Chapter 5?",
+    "answer": "Kh?ng ?? b?ng ch?ng ?? tr? l?i.",
+    "gold_pages": [],
+    "evidence": "Perseverance 2021 landing date is not in this handbook."
+  },
+  {
+    "id": "adv_test_27",
+    "split": "test",
+    "category": "unanswerable",
+    "answerable": false,
+    "question": "What was the exact propellant mass in metric tons loaded into the Saturn V first stage (S-IC) for Apollo 11?",
+    "answer": "Kh?ng ?? b?ng ch?ng ?? tr? l?i.",
+    "gold_pages": [],
+    "evidence": "Apollo 11 S-IC propellant mass is not stated in this handbook."
+  },
+  {
+    "id": "adv_test_28",
+    "split": "test",
+    "category": "unanswerable",
+    "answerable": false,
+    "question": "What is the maximum pressurized cargo mass in kilograms of the SpaceX Cargo Dragon 2 spacecraft listed in Appendix G?",
+    "answer": "Kh?ng ?? b?ng ch?ng ?? tr? l?i.",
+    "gold_pages": [],
+    "evidence": "SpaceX Cargo Dragon 2 specifications are not in Appendix G or anywhere in the document."
+  },
+  {
+    "id": "adv_test_29",
+    "split": "test",
+    "category": "unanswerable",
+    "answerable": false,
+    "question": "How many solar array wings and what total kilowatt power output does the Europa Clipper spacecraft generate according to Table 3.11-1?",
+    "answer": "Kh?ng ?? b?ng ch?ng ?? tr? l?i.",
+    "gold_pages": [],
+    "evidence": "Europa Clipper power output is not in Table 3.11-1 or this handbook."
+  },
+  {
+    "id": "adv_test_30",
+    "split": "test",
+    "category": "unanswerable",
+    "answerable": false,
+    "question": "What specific thermal protection tile thickness in millimeters is mandated for Starship orbital reentry in Section 5.3?",
+    "answer": "Kh?ng ?? b?ng ch?ng ?? tr? l?i.",
+    "gold_pages": [],
+    "evidence": "Starship thermal tile thickness is not mentioned in this handbook."
+  }
+]
