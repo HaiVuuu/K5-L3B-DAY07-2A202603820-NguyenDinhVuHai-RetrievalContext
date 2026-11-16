@@ -1,9 +1,10 @@
 """Offline behavioral checks only; fake adapters do not measure model quality."""
+import os
 import sys
 import unittest
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'starter'))
-from agentic import run_agent
+from agentic import GeminiController, expand_neighbor_chunks, pack_untrusted_context, run_agent
 
 CHUNK = {'id': 'c1', 'text': 'Hoàn tiền trong 7 ngày.', 'source_id': 'doc',
          'source': 'doc.pdf', 'page': 1, 'score': 0.8, 'metadata': {}}
@@ -70,5 +71,31 @@ class AgentTests(unittest.TestCase):
             def search(self, query, *, filters, top_k): raise ConnectionError('database unavailable')
         with self.assertRaises(ConnectionError):
             run_agent('q', Controller([{'action':'search','query':'q'}]), Broken())
+
+    def test_neighbor_expansion_untrusted_wrap_and_full_citation_tag(self):
+        c2 = {**CHUNK, 'id': 'c2', 'text': 'Đoạn kế tiếp mở rộng.', 'page': 1}
+        expanded = expand_neighbor_chunks([CHUNK], [CHUNK, c2])
+        self.assertEqual([x['id'] for x in expanded], ['c1', 'c2'])
+        ctx, ids = pack_untrusted_context(expanded, budget=500)
+        self.assertIn('<untrusted_data', ctx)
+        self.assertEqual(ids, ['c1', 'c2'])
+        c = Controller([
+            {'action': 'search', 'query': 'hoàn tiền'},
+            {'action': 'answer', 'answer': '7 ngày [doc:1:c2]', 'citations': ['doc:1:c2']},
+        ])
+        res = run_agent('Hoàn tiền?', c, Retriever([CHUNK]), budget=500,
+                        expand_neighbors=True, all_chunks=[CHUNK, c2], wrap_untrusted=True)
+        self.assertEqual(res['status'], 'answered')
+        self.assertEqual(res['citations'], ['c2'])
+
+    def test_missing_api_key_fails_loudly(self):
+        old = os.environ.pop('GEMINI_API_KEY', None)
+        try:
+            with self.assertRaises(RuntimeError):
+                from agentic import load_env_key
+                load_env_key('nonexistent.env')
+        finally:
+            if old is not None:
+                os.environ['GEMINI_API_KEY'] = old
 
 if __name__ == '__main__': unittest.main()

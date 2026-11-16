@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'starter'))
-from baseline import TfidfIndex, evaluate, hit, pack_context, validate
+from baseline import Bm25Index, HybridRrfIndex, TfidfIndex, evaluate, hit, infer_chapter_filter, pack_context, summarize_traces, validate
 from convert_day6 import convert_chunk, convert_question
 
 
@@ -68,9 +68,24 @@ class BaselineTests(unittest.TestCase):
             subprocess.run([sys.executable, str(ROOT/'starter/baseline.py'), '--chunks', str(root/'chunks.json'),
                             '--questions', str(root/'q.json'), '--split', 'dev', '--output', str(root/'out')],
                            check=True, capture_output=True, text=True)
-            summary = json.loads((root/'out/summary.json').read_text())
+            summary = json.loads((root/'out/summary.json').read_text(encoding='utf-8'))
             self.assertEqual((summary['split'], summary['n'], summary['hit1']), ('dev', 1, 1))
-            self.assertEqual(len(json.loads((root/'out/traces.json').read_text())), 1)
+            self.assertEqual(len(json.loads((root/'out/traces.json').read_text(encoding='utf-8'))), 1)
+
+    def test_bm25_hybrid_and_unanswerable_guard(self):
+        unans = {'id': 'u1', 'split': 'dev', 'question': 'Đổi vé máy bay?', 'answerable': False, 'gold': []}
+        validate(self.chunks, [self.q, unans])
+        bm25 = Bm25Index(self.chunks)
+        hybrid = HybridRrfIndex(TfidfIndex(self.chunks), bm25)
+        traces = evaluate(hybrid, [self.q, unans])
+        summary = summarize_traces('hybrid', 'dev', traces)
+        self.assertEqual(summary['n'], 1)
+        self.assertEqual(summary['unanswerable_queries'], 1)
+        self.assertEqual(summary['hit1'], 1)
+        self.assertIsNone(traces[1]['hit1'])
+        flt, reason = infer_chapter_filter('In Chapter 2: The Vanishing Glass, what happened?')
+        self.assertEqual(flt, {'chapter': 'Chapter 2: The Vanishing Glass'})
+        self.assertEqual(reason, 'query_chapter_number')
 
 
 if __name__ == '__main__': unittest.main()

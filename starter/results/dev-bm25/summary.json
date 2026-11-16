@@ -1,0 +1,19 @@
+{
+  "strategy": "bm25",
+  "split": "dev",
+  "n": 15,
+  "total_queries": 17,
+  "unanswerable_queries": 2,
+  "hit1": 9,
+  "hit1_rate": 0.6,
+  "hit3": 12,
+  "hit3_rate": 0.8,
+  "context_hit": 9,
+  "context_hit_rate": 0.6,
+  "mrr": 0.7,
+  "avg_context_chars": 651.6470588235294,
+  "avg_ms": 1.128252938061076,
+  "median_ms": 0.9658000199124217,
+  "index_seconds": 0.013632999995024875,
+  "service_cost_usd": 0
+}

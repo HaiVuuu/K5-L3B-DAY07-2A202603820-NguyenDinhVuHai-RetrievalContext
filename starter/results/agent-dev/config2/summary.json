@@ -1,0 +1,23 @@
+{
+  "config": "config2",
+  "description": "Config 2 (Neighbor-Chunk Expansion + Multi-turn Rewrite): hybrid_search + lexical rewrite, top_k=3, budget=3600 chars, max_searches=3, expand_neighbors=True",
+  "model": "gemini-3.1-flash-lite",
+  "total_queries": 17,
+  "answerable_n": 15,
+  "unanswerable_n": 2,
+  "provider_errors": 0,
+  "context_hit": 14,
+  "context_hit_rate": 0.9333333333333333,
+  "answered_on_answerable": 15,
+  "false_abstention": 0,
+  "abstention_on_unanswerable": 2,
+  "abstention_rate": 1.0,
+  "citation_in_context_rate": 1.0,
+  "citation_gold_chunk_hit": "14/17",
+  "citation_gold_chunk_rate": 0.8235294117647058,
+  "avg_tool_calls": 1,
+  "avg_latency_ms": 46776.84,
+  "total_prompt_tokens": 35672,
+  "total_completion_tokens": 2590,
+  "total_cost_usd": 0.006903
+}

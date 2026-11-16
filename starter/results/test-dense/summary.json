@@ -1,0 +1,19 @@
+{
+  "strategy": "dense",
+  "split": "test",
+  "n": 5,
+  "total_queries": 7,
+  "unanswerable_queries": 2,
+  "hit1": 2,
+  "hit1_rate": 0.4,
+  "hit3": 2,
+  "hit3_rate": 0.4,
+  "context_hit": 2,
+  "context_hit_rate": 0.4,
+  "mrr": 0.4,
+  "avg_context_chars": 660.7142857142857,
+  "avg_ms": 294.1387857094274,
+  "median_ms": 26.687800011131912,
+  "index_seconds": 52.281495800009,
+  "service_cost_usd": 0
+}

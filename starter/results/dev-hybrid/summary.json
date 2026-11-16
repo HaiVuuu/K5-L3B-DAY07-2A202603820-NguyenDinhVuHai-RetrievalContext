@@ -1,0 +1,19 @@
+{
+  "strategy": "hybrid",
+  "split": "dev",
+  "n": 15,
+  "total_queries": 17,
+  "unanswerable_queries": 2,
+  "hit1": 9,
+  "hit1_rate": 0.6,
+  "hit3": 11,
+  "hit3_rate": 0.7333333333333333,
+  "context_hit": 9,
+  "context_hit_rate": 0.6,
+  "mrr": 0.6666666666666666,
+  "avg_context_chars": 633.1176470588235,
+  "avg_ms": 34.21828823218889,
+  "median_ms": 18.475999997463077,
+  "index_seconds": 16.874484400002984,
+  "service_cost_usd": 0
+}

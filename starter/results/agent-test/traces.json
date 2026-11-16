@@ -1,0 +1,820 @@
+[
+  {
+    "query_id": "q16",
+    "split": "test",
+    "config": "config2",
+    "question": "What peculiar events were reported on the evening television news that made Mr. Dursley anxious?",
+    "answerable": true,
+    "status": "answered",
+    "answer": "The peculiar events reported on the evening television news that made Mr. Dursley anxious included sightings of owls and shooting stars, as well as reports of many funny-looking people in town [hp-book1-ch1-4:16:hp-book1-ch1-4_p16_para_2].",
+    "citations": [
+      "hp-book1-ch1-4_p16_para_2"
+    ],
+    "citation_support_gold_chunk": [
+      false
+    ],
+    "tool_calls": 1,
+    "queries": [
+      "What peculiar events were reported on the evening television news that made Mr. Dursley anxious? Mr. Dursley evening television news peculiar events"
+    ],
+    "tools_used": [
+      "hybrid_search"
+    ],
+    "context_ids": [
+      "hp-book1-ch1-4_p13_para_1",
+      "hp-book1-ch1-4_p16_para_2",
+      "hp-book1-ch1-4_p13_para_0",
+      "hp-book1-ch1-4_p13_para_2",
+      "hp-book1-ch1-4_p16_para_3"
+    ],
+    "context_chars": 3408,
+    "context_hit": false,
+    "llm_calls": 2,
+    "prompt_tokens": 2162,
+    "completion_tokens": 155,
+    "estimated_cost_usd": 0.000417,
+    "elapsed_ms": 43544.78,
+    "error": null,
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "What peculiar events were reported on the evening television news that made Mr. Dursley anxious? Mr. Dursley evening television news peculiar events",
+        "filter": null,
+        "results": [
+          {
+            "id": "hp-book1-ch1-4_p13_para_1",
+            "source_id": "hp-book1-ch1-4",
+            "source": "data/harrypotter.pdf",
+            "page": 13,
+            "text": "ow having a tantrum and throwing his cereal at the walls. “Little\ntyke,” chortled Mr. Dursley as he left the house. He got into his car and\nbacked out of number four’s drive.\nIt was on the corner of the street that he noticed the first sign of something\npeculiar — a cat reading a map. For a second, Mr. Dursley didn’t realize what\nhe had seen — then he jerked his head around to look again. There was a\ntabby cat standing on the corner of Privet Drive, but there wasn’t a map in\nsight. What could he have been thinking of? It must have been a trick of the\nlight. Mr. Dursley blinked and stared at th",
+            "metadata": {
+              "chapter": "Chapter 1: The Boy Who Lived",
+              "chunk_strategy": "paragraph",
+              "char_count": 2359,
+              "book": "Book 1: Harry Potter and the Sorcerer's Stone"
+            },
+            "chunk_id": "hp-book1-ch1-4_p13_para_1",
+            "score": 0.058548009367681494,
+            "rank": 1,
+            "strategy": "hybrid"
+          },
+          {
+            "id": "hp-book1-ch1-4_p16_para_2",
+            "source_id": "hp-book1-ch1-4",
+            "source": "data/harrypotter.pdf",
+            "page": 16,
+            "text": "came into the living room carrying two cups of tea. It was no\ngood. He’d have to say something to her. He cleared his throat nervously. “Er\n— Petunia, dear — you haven’t heard from your sister lately, have you?”\nAs he had expected, Mrs. Dursley looked shocked and angry. After all, they\nnormally pretended she didn’t have a sister.\n“No,” she said sharply. “Why?”\n“Funny stuff on the news,” Mr. Dursley mumbled. “Owls . . . shooting\nstars . . . and there were a lot of funny-looking people in town today . . .”\n“So?” snapped Mrs. Dursley.\n“Well, I just thought . . . maybe . . . it was something to d",
+            "metadata": {
+              "chapter": "Chapter 1: The Boy Who Lived",
+              "chunk_strategy": "paragraph",
+              "book": "Book 1: Harry Potter and the Sorcerer's Stone",
+              "char_count": 1986
+            },
+            "chunk_id": "hp-book1-ch1-4_p16_para_2",
+            "score": 0.05835813492063492,
+            "rank": 2,
+            "strategy": "hybrid"
+          },
+          {
+            "id": "hp-book1-ch1-4_p13_para_0",
+            "source_id": "hp-book1-ch1-4",
+            "source": "data/harrypotter.pdf",
+            "page": 13,
+            "text": "When Mr. and Mrs. Dursley woke up on the dull, gray Tuesday our story\nstarts, there was nothing about the cloudy sky outside to suggest that strange\nand mysterious things would soon be happening all over the country. Mr.\nDursley hummed as he picked out his most boring tie for work, and Mrs.\nDursley gossiped away happily as she wrestled a screaming Dudley into his\nhigh chair.\nNone of them noticed a large, tawny owl flutter past the window.\nAt half past eight, Mr. Dursley picked up his briefcase, pecked Mrs.\nDursley on the cheek, and tried to kiss Dudley good-bye but missed, because\nDudley was n",
+            "metadata": {
+              "chunk_strategy": "paragraph",
+              "chapter": "Chapter 1: The Boy Who Lived",
+              "char_count": 2359,
+              "book": "Book 1: Harry Potter and the Sorcerer's Stone"
+            },
+            "chunk_id": "hp-book1-ch1-4_p13_para_0",
+            "score": 0.05823404983357701,
+            "rank": 3,
+            "strategy": "hybrid"
+          }
+        ],
+        "expanded_ids": [
+          "hp-book1-ch1-4_p13_para_1",
+          "hp-book1-ch1-4_p16_para_2",
+          "hp-book1-ch1-4_p13_para_0",
+          "hp-book1-ch1-4_p13_para_2",
+          "hp-book1-ch1-4_p16_para_3",
+          "hp-book1-ch1-4_p16_para_1"
+        ],
+        "context": "<untrusted_data citation=\"[hp-book1-ch1-4:13:hp-book1-ch1-4_p13_para_1]\" id=\"hp-book1-ch1-4_p13_para_1\" source=\"data/harrypotter.pdf\" page=\"13\">\now having a tantrum and throwing his cereal at the walls. “Little\ntyke,” chortled Mr. Dursley as he left the house. He got into his car and\nbacked out of number four’s drive.\nIt was on the corner of the street that he noticed the first sign of something\npeculiar — a cat reading a map. For a second, Mr. Dursley didn’t realize what\nhe had seen — then he jerked his head around to look again. There was a\ntabby cat standing on the corner of Privet Drive, but there wasn’t a map in\nsight. What could he have been thinking of? It must have been a trick of the\nlight. Mr. Dursley blinked and stared at th\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:16:hp-book1-ch1-4_p16_para_2]\" id=\"hp-book1-ch1-4_p16_para_2\" source=\"data/harrypotter.pdf\" page=\"16\">\ncame into the living room carrying two cups of tea. It was no\ngood. He’d have to say something to her. He cleared his throat nervously. “Er\n— Petunia, dear — you haven’t heard from your sister lately, have you?”\nAs he had expected, Mrs. Dursley looked shocked and angry. After all, they\nnormally pretended she didn’t have a sister.\n“No,” she said sharply. “Why?”\n“Funny stuff on the news,” Mr. Dursley mumbled. “Owls . . . shooting\nstars . . . and there were a lot of funny-looking people in town today . . .”\n“So?” snapped Mrs. Dursley.\n“Well, I just thought . . . maybe . . . it was something to d\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:13:hp-book1-ch1-4_p13_para_0]\" id=\"hp-book1-ch1-4_p13_para_0\" source=\"data/harrypotter.pdf\" page=\"13\">\nWhen Mr. and Mrs. Dursley woke up on the dull, gray Tuesday our story\nstarts, there was nothing about the cloudy sky outside to suggest that strange\nand mysterious things would soon be happening all over the country. Mr.\nDursley hummed as he picked out his most boring tie for work, and Mrs.\nDursley gossiped away happily as she wrestled a screaming Dudley into his\nhigh chair.\nNone of them noticed a large, tawny owl flutter past the window.\nAt half past eight, Mr. Dursley picked up his briefcase, pecked Mrs.\nDursley on the cheek, and tried to kiss Dudley good-bye but missed, because\nDudley was n\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:13:hp-book1-ch1-4_p13_para_2]\" id=\"hp-book1-ch1-4_p13_para_2\" source=\"data/harrypotter.pdf\" page=\"13\">\ne cat. It stared back. As Mr. Dursley\ndrove around the corner and up the road, he watched the cat in his mirror. It\nwas now reading the sign that said Privet Drive — no, looking at the sign;\ncats couldn’t read maps or signs. Mr. Dursley gave himself a little shake and\nput the cat out of his mind. As he drove toward town he thought of nothing\nexcept a large order of drills he was hoping to get that day.\nBut on the edge of town, drills were driven out of his mind by something\nelse. As he sat in the usual morning traffic jam, he couldn’t help noticing that\nthere seemed to be a lot of strangely dr\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:16:hp-book1-ch1-4_p16_para_3]\" id=\"hp-book1-ch1-4_p16_para_3\" source=\"data/harrypotter.pdf\" page=\"16\">\no with . . . you\nknow . . . her crowd.”\nMrs. Dursley sipped her tea through pursed lips. Mr. Dursley wondered\nwhether he dared tell her he’d heard the name “Potter.” He decided he didn’t\n</untrusted_data>",
+        "context_ids": [
+          "hp-book1-ch1-4_p13_para_1",
+          "hp-book1-ch1-4_p16_para_2",
+          "hp-book1-ch1-4_p13_para_0",
+          "hp-book1-ch1-4_p13_para_2",
+          "hp-book1-ch1-4_p16_para_3"
+        ],
+        "latency_ms": 166.84
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q17",
+    "split": "test",
+    "config": "config2",
+    "question": "In Chapter 2: The Vanishing Glass, what did the boa constrictor hiss to Harry as it slithered out of its tank?",
+    "answerable": true,
+    "status": "answered",
+    "answer": "Khi con trăn boa trườn ra khỏi bể, nó đã rít lên với Harry: \"Brazil, here I come. . . . Thanksss, amigo.\" [hp-book1-ch1-4:34:hp-book1-ch1-4_p34_para_2]",
+    "citations": [
+      "hp-book1-ch1-4_p34_para_2"
+    ],
+    "citation_support_gold_chunk": [
+      true
+    ],
+    "tool_calls": 1,
+    "queries": [
+      "In Chapter 2: The Vanishing Glass, what did the boa constrictor hiss to Harry as it slithered out of its tank? boa constrictor hiss Harry Chapter 2 The Vanishing Glass"
+    ],
+    "tools_used": [
+      "hybrid_search"
+    ],
+    "context_ids": [
+      "hp-book1-ch1-4_p34_para_0",
+      "hp-book1-ch1-4_p34_para_1",
+      "hp-book1-ch1-4_p33_para_1",
+      "hp-book1-ch1-4_p33_para_3",
+      "hp-book1-ch1-4_p34_para_2"
+    ],
+    "context_chars": 3172,
+    "context_hit": true,
+    "llm_calls": 2,
+    "prompt_tokens": 2109,
+    "completion_tokens": 153,
+    "estimated_cost_usd": 0.000408,
+    "elapsed_ms": 43498.88,
+    "error": null,
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "In Chapter 2: The Vanishing Glass, what did the boa constrictor hiss to Harry as it slithered out of its tank? boa constrictor hiss Harry Chapter 2 The Vanishing Glass",
+        "filter": {
+          "chapter": "Chapter 2: The Vanishing Glass"
+        },
+        "results": [
+          {
+            "id": "hp-book1-ch1-4_p34_para_0",
+            "source_id": "hp-book1-ch1-4",
+            "source": "data/harrypotter.pdf",
+            "page": 34,
+            "text": "“I know,” Harry murmured through the glass, though he wasn’t sure the\nsnake could hear him. “It must be really annoying.”\nThe snake nodded vigorously.\n“Where do you come from, anyway?” Harry asked.\nThe snake jabbed its tail at a little sign next to the glass. Harry peered at it.\nBoa Constrictor, Brazil.\n“Was it nice there?”\nThe boa constrictor jabbed its tail at the sign again and Harry read on: This\nspecimen was bred in the zoo. “Oh, I see — so you’ve never been to Brazil?”\nAs the snake shook its head, a deafening shout behind Harry made both of\nthem jump. “DUDLEY! MR. DURSLEY! COME AND LOOK",
+            "metadata": {
+              "char_count": 1702,
+              "chunk_strategy": "paragraph",
+              "book": "Book 1: Harry Potter and the Sorcerer's Stone",
+              "chapter": "Chapter 2: The Vanishing Glass"
+            },
+            "chunk_id": "hp-book1-ch1-4_p34_para_0",
+            "score": 0.06039132734003173,
+            "rank": 1,
+            "strategy": "hybrid"
+          },
+          {
+            "id": "hp-book1-ch1-4_p34_para_1",
+            "source_id": "hp-book1-ch1-4",
+            "source": "data/harrypotter.pdf",
+            "page": 34,
+            "text": "AT THIS\nSNAKE! YOU WON’T BELIEVE WHAT IT’S DOING!”\nDudley came waddling toward them as fast as he could.\n“Out of the way, you,” he said, punching Harry in the ribs. Caught by\nsurprise, Harry fell hard on the concrete floor. What came next happened so\nfast no one saw how it happened — one second, Piers and Dudley were\nleaning right up close to the glass, the next, they had leapt back with howls of\nhorror.\nHarry sat up and gasped; the glass front of the boa constrictor’s tank had\nvanished. The great snake was uncoiling itself rapidly, slithering out onto the\nfloor. People throughout the reptile",
+            "metadata": {
+              "chapter": "Chapter 2: The Vanishing Glass",
+              "chunk_strategy": "paragraph",
+              "book": "Book 1: Harry Potter and the Sorcerer's Stone",
+              "char_count": 1702
+            },
+            "chunk_id": "hp-book1-ch1-4_p34_para_1",
+            "score": 0.05994182971972502,
+            "rank": 2,
+            "strategy": "hybrid"
+          },
+          {
+            "id": "hp-book1-ch1-4_p33_para_1",
+            "source_id": "hp-book1-ch1-4",
+            "source": "data/harrypotter.pdf",
+            "page": 33,
+            "text": "d. In fact, it was fast asleep.\nDudley stood with his nose pressed against the glass, staring at the\nglistening brown coils.\n“Make it move,” he whined at his father. Uncle Vernon tapped on the glass,\nbut the snake didn’t budge.\n“Do it again,” Dudley ordered. Uncle Vernon rapped the glass smartly with\nhis knuckles, but the snake just snoozed on.\n“This is boring,” Dudley moaned. He shuffled away.\nHarry moved in front of the tank and looked intently at the snake. He\nwouldn’t have been surprised if it had died of boredom itself — no company\nexcept stupid people drumming their fingers on the glass",
+            "metadata": {
+              "chapter": "Chapter 2: The Vanishing Glass",
+              "book": "Book 1: Harry Potter and the Sorcerer's Stone",
+              "char_count": 1850,
+              "chunk_strategy": "paragraph"
+            },
+            "chunk_id": "hp-book1-ch1-4_p33_para_1",
+            "score": 0.05843253968253968,
+            "rank": 3,
+            "strategy": "hybrid"
+          }
+        ],
+        "expanded_ids": [
+          "hp-book1-ch1-4_p34_para_0",
+          "hp-book1-ch1-4_p34_para_1",
+          "hp-book1-ch1-4_p33_para_1",
+          "hp-book1-ch1-4_p33_para_3",
+          "hp-book1-ch1-4_p34_para_2"
+        ],
+        "context": "<untrusted_data citation=\"[hp-book1-ch1-4:34:hp-book1-ch1-4_p34_para_0]\" id=\"hp-book1-ch1-4_p34_para_0\" source=\"data/harrypotter.pdf\" page=\"34\">\n“I know,” Harry murmured through the glass, though he wasn’t sure the\nsnake could hear him. “It must be really annoying.”\nThe snake nodded vigorously.\n“Where do you come from, anyway?” Harry asked.\nThe snake jabbed its tail at a little sign next to the glass. Harry peered at it.\nBoa Constrictor, Brazil.\n“Was it nice there?”\nThe boa constrictor jabbed its tail at the sign again and Harry read on: This\nspecimen was bred in the zoo. “Oh, I see — so you’ve never been to Brazil?”\nAs the snake shook its head, a deafening shout behind Harry made both of\nthem jump. “DUDLEY! MR. DURSLEY! COME AND LOOK\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:34:hp-book1-ch1-4_p34_para_1]\" id=\"hp-book1-ch1-4_p34_para_1\" source=\"data/harrypotter.pdf\" page=\"34\">\nAT THIS\nSNAKE! YOU WON’T BELIEVE WHAT IT’S DOING!”\nDudley came waddling toward them as fast as he could.\n“Out of the way, you,” he said, punching Harry in the ribs. Caught by\nsurprise, Harry fell hard on the concrete floor. What came next happened so\nfast no one saw how it happened — one second, Piers and Dudley were\nleaning right up close to the glass, the next, they had leapt back with howls of\nhorror.\nHarry sat up and gasped; the glass front of the boa constrictor’s tank had\nvanished. The great snake was uncoiling itself rapidly, slithering out onto the\nfloor. People throughout the reptile\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:33:hp-book1-ch1-4_p33_para_1]\" id=\"hp-book1-ch1-4_p33_para_1\" source=\"data/harrypotter.pdf\" page=\"33\">\nd. In fact, it was fast asleep.\nDudley stood with his nose pressed against the glass, staring at the\nglistening brown coils.\n“Make it move,” he whined at his father. Uncle Vernon tapped on the glass,\nbut the snake didn’t budge.\n“Do it again,” Dudley ordered. Uncle Vernon rapped the glass smartly with\nhis knuckles, but the snake just snoozed on.\n“This is boring,” Dudley moaned. He shuffled away.\nHarry moved in front of the tank and looked intently at the snake. He\nwouldn’t have been surprised if it had died of boredom itself — no company\nexcept stupid people drumming their fingers on the glass\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:33:hp-book1-ch1-4_p33_para_3]\" id=\"hp-book1-ch1-4_p33_para_3\" source=\"data/harrypotter.pdf\" page=\"33\">\nhat said quite plainly:\n“I get that all the time.”\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:34:hp-book1-ch1-4_p34_para_2]\" id=\"hp-book1-ch1-4_p34_para_2\" source=\"data/harrypotter.pdf\" page=\"34\">\nhouse screamed and started running for\nthe exits.\nAs the snake slid swiftly past him, Harry could have sworn a low, hissing\nvoice said, “Brazil, here I come. . . . Thanksss, amigo.”\nThe keeper of the reptile house was in shock.\n“But the glass,” he kept saying, “where did the glass go?”\nThe zoo director himself made Aunt Petunia a cup of strong, sweet tea\nwhile he apologized over and over again. Piers and Dudley could only gibber.\nAs far as Harry had seen, the snake hadn’t done anything except snap\n</untrusted_data>",
+        "context_ids": [
+          "hp-book1-ch1-4_p34_para_0",
+          "hp-book1-ch1-4_p34_para_1",
+          "hp-book1-ch1-4_p33_para_1",
+          "hp-book1-ch1-4_p33_para_3",
+          "hp-book1-ch1-4_p34_para_2"
+        ],
+        "latency_ms": 24.9
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q18",
+    "split": "test",
+    "config": "config2",
+    "question": "Why did Harry fail in his plan to sneak downstairs at six o'clock in the morning to intercept the postman?",
+    "answerable": true,
+    "status": "answered",
+    "answer": "Harry failed in his plan because as he crept across the dark hall toward the front door, he trodden on something big and squashy, which caused him to scream and likely alerted the household [hp-book1-ch1-4:43:hp-book1-ch1-4_p43_para_3].",
+    "citations": [
+      "hp-book1-ch1-4_p43_para_3"
+    ],
+    "citation_support_gold_chunk": [
+      false
+    ],
+    "tool_calls": 1,
+    "queries": [
+      "Why did Harry fail in his plan to sneak downstairs at six o'clock in the morning to intercept the postman? Harry Potter sneak downstairs six o'clock postman"
+    ],
+    "tools_used": [
+      "hybrid_search"
+    ],
+    "context_ids": [
+      "hp-book1-ch1-4_p43_para_2",
+      "hp-book1-ch1-4_p36_para_0",
+      "hp-book1-ch1-4_p43_para_0",
+      "hp-book1-ch1-4_p43_para_3",
+      "hp-book1-ch1-4_p43_para_1"
+    ],
+    "context_chars": 3060,
+    "context_hit": false,
+    "llm_calls": 2,
+    "prompt_tokens": 2040,
+    "completion_tokens": 156,
+    "estimated_cost_usd": 0.0004,
+    "elapsed_ms": 42793.97,
+    "error": null,
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Why did Harry fail in his plan to sneak downstairs at six o'clock in the morning to intercept the postman? Harry Potter sneak downstairs six o'clock postman",
+        "filter": null,
+        "results": [
+          {
+            "id": "hp-book1-ch1-4_p43_para_2",
+            "source_id": "hp-book1-ch1-4",
+            "source": "data/harrypotter.pdf",
+            "page": 43,
+            "text": "pboard — I mean, your bedroom,” he wheezed at Harry.\n“Dudley — go — just go.”\nHarry walked round and round his new room. Someone knew he had\nmoved out of his cupboard and they seemed to know he hadn’t received his\nfirst letter. Surely that meant they’d try again? And this time he’d make sure\nthey didn’t fail. He had a plan.\nThe repaired alarm clock rang at six o’clock the next morning. Harry turned it\noff quickly and dressed silently. He mustn’t wake the Dursleys. He stole\ndownstairs without turning on any of the lights.\nHe was going to wait for the postman on the corner of Privet Drive and ge",
+            "metadata": {
+              "book": "Book 1: Harry Potter and the Sorcerer's Stone",
+              "chapter": "Chapter 3: The Letters from No One",
+              "char_count": 2001,
+              "chunk_strategy": "paragraph"
+            },
+            "chunk_id": "hp-book1-ch1-4_p43_para_2",
+            "score": 0.06065573770491803,
+            "rank": 1,
+            "strategy": "hybrid"
+          },
+          {
+            "id": "hp-book1-ch1-4_p36_para_0",
+            "source_id": "hp-book1-ch1-4",
+            "source": "data/harrypotter.pdf",
+            "page": 36,
+            "text": "vanish the second Harry tried to get a closer look.\nAt school, Harry had no one. Everybody knew that Dudley’s gang hated\nthat odd Harry Potter in his baggy old clothes and broken glasses, and nobody\nliked to disagree with Dudley’s gang.",
+            "metadata": {
+              "chapter": "Chapter 2: The Vanishing Glass",
+              "char_count": 236,
+              "chunk_strategy": "paragraph",
+              "book": "Book 1: Harry Potter and the Sorcerer's Stone"
+            },
+            "chunk_id": "hp-book1-ch1-4_p36_para_0",
+            "score": 0.05129911891439964,
+            "rank": 2,
+            "strategy": "hybrid"
+          },
+          {
+            "id": "hp-book1-ch1-4_p43_para_0",
+            "source_id": "hp-book1-ch1-4",
+            "source": "data/harrypotter.pdf",
+            "page": 43,
+            "text": "Next morning at breakfast, everyone was rather quiet. Dudley was in shock.\nHe’d screamed, whacked his father with his Smelting stick, been sick on\npurpose, kicked his mother, and thrown his tortoise through the greenhouse\nroof, and he still didn’t have his room back. Harry was thinking about this\ntime yesterday and bitterly wishing he’d opened the letter in the hall. Uncle\nVernon and Aunt Petunia kept looking at each other darkly.\nWhen the mail arrived, Uncle Vernon, who seemed to be trying to be nice\nto Harry, made Dudley go and get it. They heard him banging things with his\nSmelting stick al",
+            "metadata": {
+              "chunk_strategy": "paragraph",
+              "chapter": "Chapter 3: The Letters from No One",
+              "char_count": 2001,
+              "book": "Book 1: Harry Potter and the Sorcerer's Stone"
+            },
+            "chunk_id": "hp-book1-ch1-4_p43_para_0",
+            "score": 0.04953672026456837,
+            "rank": 3,
+            "strategy": "hybrid"
+          }
+        ],
+        "expanded_ids": [
+          "hp-book1-ch1-4_p43_para_2",
+          "hp-book1-ch1-4_p36_para_0",
+          "hp-book1-ch1-4_p43_para_0",
+          "hp-book1-ch1-4_p43_para_3",
+          "hp-book1-ch1-4_p43_para_1",
+          "hp-book1-ch1-4_p37_para_0"
+        ],
+        "context": "<untrusted_data citation=\"[hp-book1-ch1-4:43:hp-book1-ch1-4_p43_para_2]\" id=\"hp-book1-ch1-4_p43_para_2\" source=\"data/harrypotter.pdf\" page=\"43\">\npboard — I mean, your bedroom,” he wheezed at Harry.\n“Dudley — go — just go.”\nHarry walked round and round his new room. Someone knew he had\nmoved out of his cupboard and they seemed to know he hadn’t received his\nfirst letter. Surely that meant they’d try again? And this time he’d make sure\nthey didn’t fail. He had a plan.\nThe repaired alarm clock rang at six o’clock the next morning. Harry turned it\noff quickly and dressed silently. He mustn’t wake the Dursleys. He stole\ndownstairs without turning on any of the lights.\nHe was going to wait for the postman on the corner of Privet Drive and ge\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:36:hp-book1-ch1-4_p36_para_0]\" id=\"hp-book1-ch1-4_p36_para_0\" source=\"data/harrypotter.pdf\" page=\"36\">\nvanish the second Harry tried to get a closer look.\nAt school, Harry had no one. Everybody knew that Dudley’s gang hated\nthat odd Harry Potter in his baggy old clothes and broken glasses, and nobody\nliked to disagree with Dudley’s gang.\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:43:hp-book1-ch1-4_p43_para_0]\" id=\"hp-book1-ch1-4_p43_para_0\" source=\"data/harrypotter.pdf\" page=\"43\">\nNext morning at breakfast, everyone was rather quiet. Dudley was in shock.\nHe’d screamed, whacked his father with his Smelting stick, been sick on\npurpose, kicked his mother, and thrown his tortoise through the greenhouse\nroof, and he still didn’t have his room back. Harry was thinking about this\ntime yesterday and bitterly wishing he’d opened the letter in the hall. Uncle\nVernon and Aunt Petunia kept looking at each other darkly.\nWhen the mail arrived, Uncle Vernon, who seemed to be trying to be nice\nto Harry, made Dudley go and get it. They heard him banging things with his\nSmelting stick al\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:43:hp-book1-ch1-4_p43_para_3]\" id=\"hp-book1-ch1-4_p43_para_3\" source=\"data/harrypotter.pdf\" page=\"43\">\nt\nthe letters for number four first. His heart hammered as he crept across the\ndark hall toward the front door —\n“AAAAARRRGH!”\nHarry leapt into the air; he’d trodden on something big and squashy on the\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:43:hp-book1-ch1-4_p43_para_1]\" id=\"hp-book1-ch1-4_p43_para_1\" source=\"data/harrypotter.pdf\" page=\"43\">\nl the way down the hall. Then he shouted, “There’s another\none! ‘Mr. H. Potter, The Smallest Bedroom, 4 Privet Drive —’”\nWith a strangled cry, Uncle Vernon leapt from his seat and ran down the\nhall, Harry right behind him. Uncle Vernon had to wrestle Dudley to the\nground to get the letter from him, which was made difficult by the fact that\nHarry had grabbed Uncle Vernon around the neck from behind. After a\nminute of confused fighting, in which everyone got hit a lot by the Smelting\nstick, Uncle Vernon straightened up, gasping for breath, with Harry’s letter\nclutched in his hand.\n“Go to your cu\n</untrusted_data>",
+        "context_ids": [
+          "hp-book1-ch1-4_p43_para_2",
+          "hp-book1-ch1-4_p36_para_0",
+          "hp-book1-ch1-4_p43_para_0",
+          "hp-book1-ch1-4_p43_para_3",
+          "hp-book1-ch1-4_p43_para_1"
+        ],
+        "latency_ms": 20.73
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q19",
+    "split": "test",
+    "config": "config2",
+    "question": "What food rations did Uncle Vernon bring for everyone at the broken-down shack on the rock?",
+    "answerable": true,
+    "status": "answered",
+    "answer": "Uncle Vernon brought a bag of chips for each person and four bananas as rations for their stay at the shack on the rock [hp-book1-ch1-4:48:hp-book1-ch1-4_p48_para_0].",
+    "citations": [
+      "hp-book1-ch1-4_p48_para_0"
+    ],
+    "citation_support_gold_chunk": [
+      true
+    ],
+    "tool_calls": 1,
+    "queries": [
+      "What food rations did Uncle Vernon bring for everyone at the broken-down shack on the rock? Uncle Vernon food rations broken-down shack rock"
+    ],
+    "tools_used": [
+      "hybrid_search"
+    ],
+    "context_ids": [
+      "hp-book1-ch1-4_p47_para_1",
+      "hp-book1-ch1-4_p47_para_2",
+      "hp-book1-ch1-4_p48_para_0",
+      "hp-book1-ch1-4_p47_para_0",
+      "hp-book1-ch1-4_p47_para_3"
+    ],
+    "context_chars": 3313,
+    "context_hit": true,
+    "llm_calls": 2,
+    "prompt_tokens": 2082,
+    "completion_tokens": 141,
+    "estimated_cost_usd": 0.000397,
+    "elapsed_ms": 42888.22,
+    "error": null,
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "What food rations did Uncle Vernon bring for everyone at the broken-down shack on the rock? Uncle Vernon food rations broken-down shack rock",
+        "filter": null,
+        "results": [
+          {
+            "id": "hp-book1-ch1-4_p47_para_1",
+            "source_id": "hp-book1-ch1-4",
+            "source": "data/harrypotter.pdf",
+            "page": 47,
+            "text": "and a pair of Uncle Vernon’s old socks. Still, you\nweren’t eleven every day.\nUncle Vernon was back and he was smiling. He was also carrying a long,\nthin package and didn’t answer Aunt Petunia when she asked what he’d\nbought.\n“Found the perfect place!” he said. “Come on! Everyone out!”\nIt was very cold outside the car. Uncle Vernon was pointing at what looked\nlike a large rock way out at sea. Perched on top of the rock was the most\nmiserable little shack you could imagine. One thing was certain, there was no\ntelevision in there.\n“Storm forecast for tonight!” said Uncle Vernon gleefully, clappin",
+            "metadata": {
+              "chapter": "Chapter 3: The Letters from No One",
+              "chunk_strategy": "paragraph",
+              "book": "Book 1: Harry Potter and the Sorcerer's Stone",
+              "char_count": 1891
+            },
+            "chunk_id": "hp-book1-ch1-4_p47_para_1",
+            "score": 0.060074034902168165,
+            "rank": 1,
+            "strategy": "hybrid"
+          },
+          {
+            "id": "hp-book1-ch1-4_p47_para_2",
+            "source_id": "hp-book1-ch1-4",
+            "source": "data/harrypotter.pdf",
+            "page": 47,
+            "text": "g his\nhands together. “And this gentleman’s kindly agreed to lend us his boat!”\nA toothless old man came ambling up to them, pointing, with a rather\nwicked grin, at an old rowboat bobbing in the iron-gray water below them.\n“I’ve already got us some rations,” said Uncle Vernon, “so all aboard!”\nIt was freezing in the boat. Icy sea spray and rain crept down their necks\nand a chilly wind whipped their faces. After what seemed like hours they\nreached the rock, where Uncle Vernon, slipping and sliding, led the way to the\nbroken-down house.\nThe inside was horrible; it smelled strongly of seaweed, th",
+            "metadata": {
+              "char_count": 1891,
+              "book": "Book 1: Harry Potter and the Sorcerer's Stone",
+              "chapter": "Chapter 3: The Letters from No One",
+              "chunk_strategy": "paragraph"
+            },
+            "chunk_id": "hp-book1-ch1-4_p47_para_2",
+            "score": 0.05973869540765363,
+            "rank": 2,
+            "strategy": "hybrid"
+          },
+          {
+            "id": "hp-book1-ch1-4_p48_para_0",
+            "source_id": "hp-book1-ch1-4",
+            "source": "data/harrypotter.pdf",
+            "page": 48,
+            "text": "There were only two rooms.\nUncle Vernon’s rations turned out to be a bag of chips each and four\nbananas. He tried to start a fire but the empty chip bags just smoked and\nshriveled up.\n“Could do with some of those letters now, eh?” he said cheerfully.\nHe was in a very good mood. Obviously he thought nobody stood a chance\nof reaching them here in a storm to deliver mail. Harry privately agreed,\nthough the thought didn’t cheer him up at all.\nAs night fell, the promised storm blew up around them. Spray from the\nhigh waves splattered the walls of the hut and a fierce wind rattled the filthy\nwindows",
+            "metadata": {
+              "chapter": "Chapter 3: The Letters from No One",
+              "char_count": 2042,
+              "chunk_strategy": "paragraph",
+              "book": "Book 1: Harry Potter and the Sorcerer's Stone"
+            },
+            "chunk_id": "hp-book1-ch1-4_p48_para_0",
+            "score": 0.055595123295219734,
+            "rank": 3,
+            "strategy": "hybrid"
+          }
+        ],
+        "expanded_ids": [
+          "hp-book1-ch1-4_p47_para_1",
+          "hp-book1-ch1-4_p47_para_2",
+          "hp-book1-ch1-4_p48_para_0",
+          "hp-book1-ch1-4_p47_para_0",
+          "hp-book1-ch1-4_p47_para_3"
+        ],
+        "context": "<untrusted_data citation=\"[hp-book1-ch1-4:47:hp-book1-ch1-4_p47_para_1]\" id=\"hp-book1-ch1-4_p47_para_1\" source=\"data/harrypotter.pdf\" page=\"47\">\nand a pair of Uncle Vernon’s old socks. Still, you\nweren’t eleven every day.\nUncle Vernon was back and he was smiling. He was also carrying a long,\nthin package and didn’t answer Aunt Petunia when she asked what he’d\nbought.\n“Found the perfect place!” he said. “Come on! Everyone out!”\nIt was very cold outside the car. Uncle Vernon was pointing at what looked\nlike a large rock way out at sea. Perched on top of the rock was the most\nmiserable little shack you could imagine. One thing was certain, there was no\ntelevision in there.\n“Storm forecast for tonight!” said Uncle Vernon gleefully, clappin\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:47:hp-book1-ch1-4_p47_para_2]\" id=\"hp-book1-ch1-4_p47_para_2\" source=\"data/harrypotter.pdf\" page=\"47\">\ng his\nhands together. “And this gentleman’s kindly agreed to lend us his boat!”\nA toothless old man came ambling up to them, pointing, with a rather\nwicked grin, at an old rowboat bobbing in the iron-gray water below them.\n“I’ve already got us some rations,” said Uncle Vernon, “so all aboard!”\nIt was freezing in the boat. Icy sea spray and rain crept down their necks\nand a chilly wind whipped their faces. After what seemed like hours they\nreached the rock, where Uncle Vernon, slipping and sliding, led the way to the\nbroken-down house.\nThe inside was horrible; it smelled strongly of seaweed, th\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:48:hp-book1-ch1-4_p48_para_0]\" id=\"hp-book1-ch1-4_p48_para_0\" source=\"data/harrypotter.pdf\" page=\"48\">\nThere were only two rooms.\nUncle Vernon’s rations turned out to be a bag of chips each and four\nbananas. He tried to start a fire but the empty chip bags just smoked and\nshriveled up.\n“Could do with some of those letters now, eh?” he said cheerfully.\nHe was in a very good mood. Obviously he thought nobody stood a chance\nof reaching them here in a storm to deliver mail. Harry privately agreed,\nthough the thought didn’t cheer him up at all.\nAs night fell, the promised storm blew up around them. Spray from the\nhigh waves splattered the walls of the hut and a fierce wind rattled the filthy\nwindows\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:47:hp-book1-ch1-4_p47_para_0]\" id=\"hp-book1-ch1-4_p47_para_0\" source=\"data/harrypotter.pdf\" page=\"47\">\nafternoon. Uncle Vernon had parked at the coast, locked them all inside the\ncar, and disappeared.\nIt started to rain. Great drops beat on the roof of the car. Dudley sniveled.\n“It’s Monday,” he told his mother. “The Great Humberto’s on tonight. I\nwant to stay somewhere with a television.”\nMonday. This reminded Harry of something. If it was Monday — and you\ncould usually count on Dudley to know the days of the week, because of\ntelevision — then tomorrow, Tuesday, was Harry’s eleventh birthday. Of\ncourse, his birthdays were never exactly fun — last year, the Dursleys had\ngiven him a coat hanger\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:47:hp-book1-ch1-4_p47_para_3]\" id=\"hp-book1-ch1-4_p47_para_3\" source=\"data/harrypotter.pdf\" page=\"47\">\ne wind whistled\nthrough the gaps in the wooden walls, and the fireplace was damp and empty.\n</untrusted_data>",
+        "context_ids": [
+          "hp-book1-ch1-4_p47_para_1",
+          "hp-book1-ch1-4_p47_para_2",
+          "hp-book1-ch1-4_p48_para_0",
+          "hp-book1-ch1-4_p47_para_0",
+          "hp-book1-ch1-4_p47_para_3"
+        ],
+        "latency_ms": 51.29
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q20",
+    "split": "test",
+    "config": "config2",
+    "question": "In Chapter 4: The Keeper of the Keys, how did Hagrid explain what the word 'Muggle' means?",
+    "answerable": true,
+    "status": "answered",
+    "answer": "Hagrid explained that a 'Muggle' is what wizards call 'nonmagic folk' [hp-book1-ch1-4:56:hp-book1-ch1-4_p56_para_0].",
+    "citations": [
+      "hp-book1-ch1-4_p56_para_0"
+    ],
+    "citation_support_gold_chunk": [
+      true
+    ],
+    "tool_calls": 1,
+    "queries": [
+      "In Chapter 4: The Keeper of the Keys, how did Hagrid explain what the word 'Muggle' means? Hagrid explanation of Muggle Chapter 4 The Keeper of the Keys"
+    ],
+    "tools_used": [
+      "hybrid_search"
+    ],
+    "context_ids": [
+      "hp-book1-ch1-4_p50_para_0",
+      "hp-book1-ch1-4_p56_para_0",
+      "hp-book1-ch1-4_p52_para_2",
+      "hp-book1-ch1-4_p50_para_1",
+      "hp-book1-ch1-4_p49_para_0"
+    ],
+    "context_chars": 3217,
+    "context_hit": true,
+    "llm_calls": 2,
+    "prompt_tokens": 2178,
+    "completion_tokens": 143,
+    "estimated_cost_usd": 0.000412,
+    "elapsed_ms": 43202.41,
+    "error": null,
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "In Chapter 4: The Keeper of the Keys, how did Hagrid explain what the word 'Muggle' means? Hagrid explanation of Muggle Chapter 4 The Keeper of the Keys",
+        "filter": {
+          "chapter": "Chapter 4: The Keeper of the Keys"
+        },
+        "results": [
+          {
+            "id": "hp-book1-ch1-4_p50_para_0",
+            "source_id": "hp-book1-ch1-4",
+            "source": "data/harrypotter.pdf",
+            "page": 50,
+            "text": "B\n \nCHAPTER FOUR\nTHE KEEPER OF THE KEYS\nOOM. They knocked again. Dudley jerked awake.\n“Where’s the cannon?” he said stupidly.\nThere was a crash behind them and Uncle Vernon came skidding into the\nroom. He was holding a rifle in his hands — now they knew what had been in\nthe long, thin package he had brought with them.\n“Who’s there?” he shouted. “I warn you — I’m armed!”\nThere was a pause. Then —\nSMASH!\nThe door was hit with such force that it swung clean off its hinges and with\na deafening crash landed flat on the floor.\nA giant of a man was standing in the doorway. His face was almost\ncomplet",
+            "metadata": {
+              "char_count": 1063,
+              "book": "Book 1: Harry Potter and the Sorcerer's Stone",
+              "chunk_strategy": "paragraph",
+              "chapter": "Chapter 4: The Keeper of the Keys"
+            },
+            "chunk_id": "hp-book1-ch1-4_p50_para_0",
+            "score": 0.05951079885506115,
+            "rank": 1,
+            "strategy": "hybrid"
+          },
+          {
+            "id": "hp-book1-ch1-4_p56_para_0",
+            "source_id": "hp-book1-ch1-4",
+            "source": "data/harrypotter.pdf",
+            "page": 56,
+            "text": "Hagrid grunted.\n“I’d like ter see a great Muggle like you stop him,” he said.\n“A what?” said Harry, interested.\n“A Muggle,” said Hagrid, “it’s what we call nonmagic folk like them. An’\nit’s your bad luck you grew up in a family o’ the biggest Muggles I ever laid\neyes on.”\n“We swore when we took him in we’d put a stop to that rubbish,” said\nUncle Vernon, “swore we’d stamp it out of him! Wizard indeed!”\n“You knew?” said Harry. “You knew I’m a — a wizard?”\n“Knew!” shrieked Aunt Petunia suddenly. “Knew! Of course we knew!\nHow could you not be, my dratted sister being what she was? Oh, she got a\nle",
+            "metadata": {
+              "book": "Book 1: Harry Potter and the Sorcerer's Stone",
+              "char_count": 1797,
+              "chunk_strategy": "paragraph",
+              "chapter": "Chapter 4: The Keeper of the Keys"
+            },
+            "chunk_id": "hp-book1-ch1-4_p56_para_0",
+            "score": 0.05858094262295083,
+            "rank": 2,
+            "strategy": "hybrid"
+          },
+          {
+            "id": "hp-book1-ch1-4_p52_para_2",
+            "source_id": "hp-book1-ch1-4",
+            "source": "data/harrypotter.pdf",
+            "page": 52,
+            "text": "n don’ need fattenin’ anymore, Dursley, don’\nworry.”\nHe passed the sausages to Harry, who was so hungry he had never tasted\nanything so wonderful, but he still couldn’t take his eyes off the giant. Finally,\nas nobody seemed about to explain anything, he said, “I’m sorry, but I still\ndon’t really know who you are.”\nThe giant took a gulp of tea and wiped his mouth with the back of his hand.\n“Call me Hagrid,” he said, “everyone does. An’ like I told yeh, I’m Keeper\nof Keys at Hogwarts — yeh’ll know all about Hogwarts, o’ course.”\n“Er — no,” said Harry.\nHagrid looked shocked.\n“Sorry,” Harry said q",
+            "metadata": {
+              "char_count": 1881,
+              "chunk_strategy": "paragraph",
+              "chapter": "Chapter 4: The Keeper of the Keys",
+              "book": "Book 1: Harry Potter and the Sorcerer's Stone"
+            },
+            "chunk_id": "hp-book1-ch1-4_p52_para_2",
+            "score": 0.058548977903816614,
+            "rank": 3,
+            "strategy": "hybrid"
+          }
+        ],
+        "expanded_ids": [
+          "hp-book1-ch1-4_p50_para_0",
+          "hp-book1-ch1-4_p56_para_0",
+          "hp-book1-ch1-4_p52_para_2",
+          "hp-book1-ch1-4_p50_para_1",
+          "hp-book1-ch1-4_p49_para_0",
+          "hp-book1-ch1-4_p56_para_1"
+        ],
+        "context": "<untrusted_data citation=\"[hp-book1-ch1-4:50:hp-book1-ch1-4_p50_para_0]\" id=\"hp-book1-ch1-4_p50_para_0\" source=\"data/harrypotter.pdf\" page=\"50\">\nB\n \nCHAPTER FOUR\nTHE KEEPER OF THE KEYS\nOOM. They knocked again. Dudley jerked awake.\n“Where’s the cannon?” he said stupidly.\nThere was a crash behind them and Uncle Vernon came skidding into the\nroom. He was holding a rifle in his hands — now they knew what had been in\nthe long, thin package he had brought with them.\n“Who’s there?” he shouted. “I warn you — I’m armed!”\nThere was a pause. Then —\nSMASH!\nThe door was hit with such force that it swung clean off its hinges and with\na deafening crash landed flat on the floor.\nA giant of a man was standing in the doorway. His face was almost\ncomplet\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:56:hp-book1-ch1-4_p56_para_0]\" id=\"hp-book1-ch1-4_p56_para_0\" source=\"data/harrypotter.pdf\" page=\"56\">\nHagrid grunted.\n“I’d like ter see a great Muggle like you stop him,” he said.\n“A what?” said Harry, interested.\n“A Muggle,” said Hagrid, “it’s what we call nonmagic folk like them. An’\nit’s your bad luck you grew up in a family o’ the biggest Muggles I ever laid\neyes on.”\n“We swore when we took him in we’d put a stop to that rubbish,” said\nUncle Vernon, “swore we’d stamp it out of him! Wizard indeed!”\n“You knew?” said Harry. “You knew I’m a — a wizard?”\n“Knew!” shrieked Aunt Petunia suddenly. “Knew! Of course we knew!\nHow could you not be, my dratted sister being what she was? Oh, she got a\nle\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:52:hp-book1-ch1-4_p52_para_2]\" id=\"hp-book1-ch1-4_p52_para_2\" source=\"data/harrypotter.pdf\" page=\"52\">\nn don’ need fattenin’ anymore, Dursley, don’\nworry.”\nHe passed the sausages to Harry, who was so hungry he had never tasted\nanything so wonderful, but he still couldn’t take his eyes off the giant. Finally,\nas nobody seemed about to explain anything, he said, “I’m sorry, but I still\ndon’t really know who you are.”\nThe giant took a gulp of tea and wiped his mouth with the back of his hand.\n“Call me Hagrid,” he said, “everyone does. An’ like I told yeh, I’m Keeper\nof Keys at Hogwarts — yeh’ll know all about Hogwarts, o’ course.”\n“Er — no,” said Harry.\nHagrid looked shocked.\n“Sorry,” Harry said q\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:50:hp-book1-ch1-4_p50_para_1]\" id=\"hp-book1-ch1-4_p50_para_1\" source=\"data/harrypotter.pdf\" page=\"50\">\nely hidden by a long, shaggy mane of hair and a wild, tangled beard,\nbut you could make out his eyes, glinting like black beetles under all the hair.\nThe giant squeezed his way into the hut, stooping so that his head just\nbrushed the ceiling. He bent down, picked up the door, and fitted it easily\nback into its frame. The noise of the storm outside dropped a little. He turned\nto look at them all.\n“Couldn’t make us a cup o’ tea, could yeh? It’s not been an easy\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:49:hp-book1-ch1-4_p49_para_0]\" id=\"hp-book1-ch1-4_p49_para_0\" source=\"data/harrypotter.pdf\" page=\"49\">\none . . .\nBOOM.\nThe whole shack shivered and Harry sat bolt upright, staring at the door.\nSomeone was outside, knocking to come in.\n</untrusted_data>",
+        "context_ids": [
+          "hp-book1-ch1-4_p50_para_0",
+          "hp-book1-ch1-4_p56_para_0",
+          "hp-book1-ch1-4_p52_para_2",
+          "hp-book1-ch1-4_p50_para_1",
+          "hp-book1-ch1-4_p49_para_0"
+        ],
+        "latency_ms": 440.71
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q23",
+    "split": "test",
+    "config": "config2",
+    "question": "How did Harry Potter destroy Tom Riddle’s diary inside the Chamber of Secrets?",
+    "answerable": false,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "citation_support_gold_chunk": [],
+    "tool_calls": 1,
+    "queries": [
+      "How did Harry Potter destroy Tom Riddle’s diary inside the Chamber of Secrets? How did Harry Potter destroy Tom Riddle’s diary inside the Chamber of Secrets?"
+    ],
+    "tools_used": [
+      "hybrid_search"
+    ],
+    "context_ids": [
+      "hp-book1-ch1-4_p27_para_0",
+      "hp-book1-ch1-4_p41_para_0",
+      "hp-book1-ch1-4_p24_para_3",
+      "hp-book1-ch1-4_p27_para_1",
+      "hp-book1-ch1-4_p26_para_2"
+    ],
+    "context_chars": 3141,
+    "context_hit": null,
+    "llm_calls": 2,
+    "prompt_tokens": 2045,
+    "completion_tokens": 128,
+    "estimated_cost_usd": 0.000384,
+    "elapsed_ms": 42410.76,
+    "error": null,
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "How did Harry Potter destroy Tom Riddle’s diary inside the Chamber of Secrets? How did Harry Potter destroy Tom Riddle’s diary inside the Chamber of Secrets?",
+        "filter": null,
+        "results": [
+          {
+            "id": "hp-book1-ch1-4_p27_para_0",
+            "source_id": "hp-book1-ch1-4",
+            "source": "data/harrypotter.pdf",
+            "page": 27,
+            "text": "There had been a flying motorcycle in it. He had a funny feeling he’d had the\nsame dream before.\nHis aunt was back outside the door.\n“Are you up yet?” she demanded.\n“Nearly,” said Harry.\n“Well, get a move on, I want you to look after the bacon. And don’t you\ndare let it burn, I want everything perfect on Duddy’s birthday.”\nHarry groaned.\n“What did you say?” his aunt snapped through the door.\n“Nothing, nothing . . .”\nDudley’s birthday — how could he have forgotten? Harry got slowly out of\nbed and started looking for socks. He found a pair under his bed and, after\npulling a spider off one of the",
+            "metadata": {
+              "char_count": 1853,
+              "chunk_strategy": "paragraph",
+              "book": "Book 1: Harry Potter and the Sorcerer's Stone",
+              "chapter": "Chapter 2: The Vanishing Glass"
+            },
+            "chunk_id": "hp-book1-ch1-4_p27_para_0",
+            "score": 0.05563805563805564,
+            "rank": 1,
+            "strategy": "hybrid"
+          },
+          {
+            "id": "hp-book1-ch1-4_p41_para_0",
+            "source_id": "hp-book1-ch1-4",
+            "source": "data/harrypotter.pdf",
+            "page": 41,
+            "text": "“I want to read it,” said Harry furiously, “as it’s mine.”\n“Get out, both of you,” croaked Uncle Vernon, stuffing the letter back\ninside its envelope.\nHarry didn’t move.\n“I WANT MY LETTER!” he shouted.\n“Let me see it!” demanded Dudley.\n“OUT!” roared Uncle Vernon, and he took both Harry and Dudley by the\nscruffs of their necks and threw them into the hall, slamming the kitchen door\nbehind them. Harry and Dudley promptly had a furious but silent fight over\nwho would listen at the keyhole; Dudley won, so Harry, his glasses dangling\nfrom one ear, lay flat on his stomach to listen at the crack betw",
+            "metadata": {
+              "char_count": 1482,
+              "book": "Book 1: Harry Potter and the Sorcerer's Stone",
+              "chapter": "Chapter 3: The Letters from No One",
+              "chunk_strategy": "paragraph"
+            },
+            "chunk_id": "hp-book1-ch1-4_p41_para_0",
+            "score": 0.051896222624070724,
+            "rank": 2,
+            "strategy": "hybrid"
+          },
+          {
+            "id": "hp-book1-ch1-4_p24_para_3",
+            "source_id": "hp-book1-ch1-4",
+            "source": "data/harrypotter.pdf",
+            "page": 24,
+            "text": "eeze ruffled the neat hedges of Privet Drive, which lay silent and tidy\nunder the inky sky, the very last place you would expect astonishing things to\nhappen. Harry Potter rolled over inside his blankets without waking up. One\nsmall hand closed on the letter beside him and he slept on, not knowing he",
+            "metadata": {
+              "char_count": 2101,
+              "chapter": "Chapter 1: The Boy Who Lived",
+              "book": "Book 1: Harry Potter and the Sorcerer's Stone",
+              "chunk_strategy": "paragraph"
+            },
+            "chunk_id": "hp-book1-ch1-4_p24_para_3",
+            "score": 0.04348165495706479,
+            "rank": 3,
+            "strategy": "hybrid"
+          }
+        ],
+        "expanded_ids": [
+          "hp-book1-ch1-4_p27_para_0",
+          "hp-book1-ch1-4_p41_para_0",
+          "hp-book1-ch1-4_p24_para_3",
+          "hp-book1-ch1-4_p27_para_1",
+          "hp-book1-ch1-4_p26_para_2",
+          "hp-book1-ch1-4_p41_para_1"
+        ],
+        "context": "<untrusted_data citation=\"[hp-book1-ch1-4:27:hp-book1-ch1-4_p27_para_0]\" id=\"hp-book1-ch1-4_p27_para_0\" source=\"data/harrypotter.pdf\" page=\"27\">\nThere had been a flying motorcycle in it. He had a funny feeling he’d had the\nsame dream before.\nHis aunt was back outside the door.\n“Are you up yet?” she demanded.\n“Nearly,” said Harry.\n“Well, get a move on, I want you to look after the bacon. And don’t you\ndare let it burn, I want everything perfect on Duddy’s birthday.”\nHarry groaned.\n“What did you say?” his aunt snapped through the door.\n“Nothing, nothing . . .”\nDudley’s birthday — how could he have forgotten? Harry got slowly out of\nbed and started looking for socks. He found a pair under his bed and, after\npulling a spider off one of the\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:41:hp-book1-ch1-4_p41_para_0]\" id=\"hp-book1-ch1-4_p41_para_0\" source=\"data/harrypotter.pdf\" page=\"41\">\n“I want to read it,” said Harry furiously, “as it’s mine.”\n“Get out, both of you,” croaked Uncle Vernon, stuffing the letter back\ninside its envelope.\nHarry didn’t move.\n“I WANT MY LETTER!” he shouted.\n“Let me see it!” demanded Dudley.\n“OUT!” roared Uncle Vernon, and he took both Harry and Dudley by the\nscruffs of their necks and threw them into the hall, slamming the kitchen door\nbehind them. Harry and Dudley promptly had a furious but silent fight over\nwho would listen at the keyhole; Dudley won, so Harry, his glasses dangling\nfrom one ear, lay flat on his stomach to listen at the crack betw\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:24:hp-book1-ch1-4_p24_para_3]\" id=\"hp-book1-ch1-4_p24_para_3\" source=\"data/harrypotter.pdf\" page=\"24\">\neeze ruffled the neat hedges of Privet Drive, which lay silent and tidy\nunder the inky sky, the very last place you would expect astonishing things to\nhappen. Harry Potter rolled over inside his blankets without waking up. One\nsmall hand closed on the letter beside him and he slept on, not knowing he\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:27:hp-book1-ch1-4_p27_para_1]\" id=\"hp-book1-ch1-4_p27_para_1\" source=\"data/harrypotter.pdf\" page=\"27\">\nm, put them on. Harry was used to spiders,\nbecause the cupboard under the stairs was full of them, and that was where he\nslept.\nWhen he was dressed he went down the hall into the kitchen. The table was\nalmost hidden beneath all Dudley’s birthday presents. It looked as though\nDudley had gotten the new computer he wanted, not to mention the second\ntelevision and the racing bike. Exactly why Dudley wanted a racing bike was\na mystery to Harry, as Dudley was very fat and hated exercise — unless of\ncourse it involved punching somebody. Dudley’s favorite punching bag was\nHarry, but he couldn’t often\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:26:hp-book1-ch1-4_p26_para_2]\" id=\"hp-book1-ch1-4_p26_para_2\" source=\"data/harrypotter.pdf\" page=\"26\">\nshe screeched. Harry heard her walking toward the kitchen and then\nthe sound of the frying pan being put on the stove. He rolled onto his back\nand tried to remember the dream he had been having. It had been a good one.\n</untrusted_data>",
+        "context_ids": [
+          "hp-book1-ch1-4_p27_para_0",
+          "hp-book1-ch1-4_p41_para_0",
+          "hp-book1-ch1-4_p24_para_3",
+          "hp-book1-ch1-4_p27_para_1",
+          "hp-book1-ch1-4_p26_para_2"
+        ],
+        "latency_ms": 20.82
+      },
+      {
+        "event": "abstain"
+      }
+    ]
+  },
+  {
+    "query_id": "q24",
+    "split": "test",
+    "config": "config2",
+    "question": "Which Horcrux did Ron Weasley destroy with the Sword of Gryffindor in the Forest of Dean?",
+    "answerable": false,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "citation_support_gold_chunk": [],
+    "tool_calls": 1,
+    "queries": [
+      "Which Horcrux did Ron Weasley destroy with the Sword of Gryffindor in the Forest of Dean? Which Horcrux did Ron Weasley destroy with the Sword of Gryffindor in the Forest of Dean?"
+    ],
+    "tools_used": [
+      "hybrid_search"
+    ],
+    "context_ids": [
+      "hp-book1-ch1-4_p40_para_1",
+      "hp-book1-ch1-4_p46_para_2",
+      "hp-book1-ch1-4_p12_para_0",
+      "hp-book1-ch1-4_p40_para_2"
+    ],
+    "context_chars": 2837,
+    "context_hit": null,
+    "llm_calls": 2,
+    "prompt_tokens": 1957,
+    "completion_tokens": 110,
+    "estimated_cost_usd": 0.00036,
+    "elapsed_ms": 42495.32,
+    "error": null,
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Which Horcrux did Ron Weasley destroy with the Sword of Gryffindor in the Forest of Dean? Which Horcrux did Ron Weasley destroy with the Sword of Gryffindor in the Forest of Dean?",
+        "filter": null,
+        "results": [
+          {
+            "id": "hp-book1-ch1-4_p40_para_1",
+            "source_id": "hp-book1-ch1-4",
+            "source": "data/harrypotter.pdf",
+            "page": 40,
+            "text": "e a funny whelk . . .”\n“Dad!” said Dudley suddenly. “Dad, Harry’s got something!”\nHarry was on the point of unfolding his letter, which was written on the\nsame heavy parchment as the envelope, when it was jerked sharply out of his\nhand by Uncle Vernon.\n“That’s mine!” said Harry, trying to snatch it back.\n“Who’d be writing to you?” sneered Uncle Vernon, shaking the letter open\nwith one hand and glancing at it. His face went from red to green faster than a\nset of traffic lights. And it didn’t stop there. Within seconds it was the grayish\nwhite of old porridge.\n“P-P-Petunia!” he gasped.\nDudley tr",
+            "metadata": {
+              "char_count": 1723,
+              "book": "Book 1: Harry Potter and the Sorcerer's Stone",
+              "chapter": "Chapter 3: The Letters from No One",
+              "chunk_strategy": "paragraph"
+            },
+            "chunk_id": "hp-book1-ch1-4_p40_para_1",
+            "score": 0.050594498529481155,
+            "rank": 1,
+            "strategy": "hybrid"
+          },
+          {
+            "id": "hp-book1-ch1-4_p46_para_2",
+            "source_id": "hp-book1-ch1-4",
+            "source": "data/harrypotter.pdf",
+            "page": 46,
+            "text": "imidly, hours later, but Uncle Vernon didn’t seem to hear her. Exactly what\nhe was looking for, none of them knew. He drove them into the middle of a\nforest, got out, looked around, shook his head, got back in the car, and off\nthey went again. The same thing happened in the middle of a plowed field,\nhalfway across a suspension bridge, and at the top of a multilevel parking\ngarage.\n“Daddy’s gone mad, hasn’t he?” Dudley asked Aunt Petunia dully late that",
+            "metadata": {
+              "book": "Book 1: Harry Potter and the Sorcerer's Stone",
+              "chunk_strategy": "paragraph",
+              "char_count": 1656,
+              "chapter": "Chapter 3: The Letters from No One"
+            },
+            "chunk_id": "hp-book1-ch1-4_p46_para_2",
+            "score": 0.04394500264410365,
+            "rank": 2,
+            "strategy": "hybrid"
+          },
+          {
+            "id": "hp-book1-ch1-4_p12_para_0",
+            "source_id": "hp-book1-ch1-4",
+            "source": "data/harrypotter.pdf",
+            "page": 12,
+            "text": "M\n \nCHAPTER ONE\nTHE BOY WHO LIVED\nr. and Mrs. Dursley, of number four, Privet Drive, were proud to say\nthat they were perfectly normal, thank you very much. They were the\nlast people you’d expect to be involved in anything strange or mysterious,\nbecause they just didn’t hold with such nonsense.\nMr. Dursley was the director of a firm called Grunnings, which made drills.\nHe was a big, beefy man with hardly any neck, although he did have a very\nlarge mustache. Mrs. Dursley was thin and blonde and had nearly twice the\nusual amount of neck, which came in very useful as she spent so much of her\ntime",
+            "metadata": {
+              "chunk_strategy": "paragraph",
+              "book": "Book 1: Harry Potter and the Sorcerer's Stone",
+              "char_count": 1499,
+              "chapter": "Chapter 1: The Boy Who Lived"
+            },
+            "chunk_id": "hp-book1-ch1-4_p12_para_0",
+            "score": 0.043865679534637755,
+            "rank": 3,
+            "strategy": "hybrid"
+          }
+        ],
+        "expanded_ids": [
+          "hp-book1-ch1-4_p40_para_1",
+          "hp-book1-ch1-4_p46_para_2",
+          "hp-book1-ch1-4_p12_para_0",
+          "hp-book1-ch1-4_p40_para_2",
+          "hp-book1-ch1-4_p40_para_0",
+          "hp-book1-ch1-4_p47_para_0"
+        ],
+        "context": "<untrusted_data citation=\"[hp-book1-ch1-4:40:hp-book1-ch1-4_p40_para_1]\" id=\"hp-book1-ch1-4_p40_para_1\" source=\"data/harrypotter.pdf\" page=\"40\">\ne a funny whelk . . .”\n“Dad!” said Dudley suddenly. “Dad, Harry’s got something!”\nHarry was on the point of unfolding his letter, which was written on the\nsame heavy parchment as the envelope, when it was jerked sharply out of his\nhand by Uncle Vernon.\n“That’s mine!” said Harry, trying to snatch it back.\n“Who’d be writing to you?” sneered Uncle Vernon, shaking the letter open\nwith one hand and glancing at it. His face went from red to green faster than a\nset of traffic lights. And it didn’t stop there. Within seconds it was the grayish\nwhite of old porridge.\n“P-P-Petunia!” he gasped.\nDudley tr\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:46:hp-book1-ch1-4_p46_para_2]\" id=\"hp-book1-ch1-4_p46_para_2\" source=\"data/harrypotter.pdf\" page=\"46\">\nimidly, hours later, but Uncle Vernon didn’t seem to hear her. Exactly what\nhe was looking for, none of them knew. He drove them into the middle of a\nforest, got out, looked around, shook his head, got back in the car, and off\nthey went again. The same thing happened in the middle of a plowed field,\nhalfway across a suspension bridge, and at the top of a multilevel parking\ngarage.\n“Daddy’s gone mad, hasn’t he?” Dudley asked Aunt Petunia dully late that\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:12:hp-book1-ch1-4_p12_para_0]\" id=\"hp-book1-ch1-4_p12_para_0\" source=\"data/harrypotter.pdf\" page=\"12\">\nM\n \nCHAPTER ONE\nTHE BOY WHO LIVED\nr. and Mrs. Dursley, of number four, Privet Drive, were proud to say\nthat they were perfectly normal, thank you very much. They were the\nlast people you’d expect to be involved in anything strange or mysterious,\nbecause they just didn’t hold with such nonsense.\nMr. Dursley was the director of a firm called Grunnings, which made drills.\nHe was a big, beefy man with hardly any neck, although he did have a very\nlarge mustache. Mrs. Dursley was thin and blonde and had nearly twice the\nusual amount of neck, which came in very useful as she spent so much of her\ntime\n</untrusted_data>\n\n<untrusted_data citation=\"[hp-book1-ch1-4:40:hp-book1-ch1-4_p40_para_2]\" id=\"hp-book1-ch1-4_p40_para_2\" source=\"data/harrypotter.pdf\" page=\"40\">\nied to grab the letter to read it, but Uncle Vernon held it high out\nof his reach. Aunt Petunia took it curiously and read the first line. For a\nmoment it looked as though she might faint. She clutched her throat and made\na choking noise.\n“Vernon! Oh my goodness — Vernon!”\nThey stared at each other, seeming to have forgotten that Harry and Dudley\nwere still in the room. Dudley wasn’t used to being ignored. He gave his\nfather a sharp tap on the head with his Smelting stick.\n“I want to read that letter,” he said loudly.\n</untrusted_data>",
+        "context_ids": [
+          "hp-book1-ch1-4_p40_para_1",
+          "hp-book1-ch1-4_p46_para_2",
+          "hp-book1-ch1-4_p12_para_0",
+          "hp-book1-ch1-4_p40_para_2"
+        ],
+        "latency_ms": 28.25
+      },
+      {
+        "event": "abstain"
+      }
+    ]
+  }
+]

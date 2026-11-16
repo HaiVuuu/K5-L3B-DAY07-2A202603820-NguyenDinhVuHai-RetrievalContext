@@ -1,0 +1,23 @@
+{
+  "config": "config0",
+  "description": "Baseline Agent: dense_search default, top_k=3, budget=800 chars, max_searches=1, no neighbor expansion",
+  "model": "gemini-3.1-flash-lite",
+  "total_queries": 7,
+  "answerable_n": 5,
+  "unanswerable_n": 2,
+  "provider_errors": 0,
+  "context_hit": 2,
+  "context_hit_rate": 0.4,
+  "answered_on_answerable": 2,
+  "false_abstention": 3,
+  "abstention_on_unanswerable": 2,
+  "abstention_rate": 1.0,
+  "citation_in_context_rate": 1.0,
+  "citation_gold_chunk_hit": "2/2",
+  "citation_gold_chunk_rate": 1.0,
+  "avg_tool_calls": 1,
+  "avg_latency_ms": 46500.08,
+  "total_prompt_tokens": 8536,
+  "total_completion_tokens": 789,
+  "total_cost_usd": 0.001754
+}

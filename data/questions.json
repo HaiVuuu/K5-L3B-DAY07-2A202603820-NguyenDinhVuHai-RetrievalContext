@@ -1,0 +1,353 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "What company did Mr. Dursley direct and what product did it make?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "hp-book1-ch1-4",
+        "page": 12,
+        "evidence": "Mr. Dursley was the director of a firm called Grunnings, which made drills."
+      }
+    ],
+    "expected_answer": "He was the director of Grunnings, a firm that made drills."
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "What unusual thing did Mr. Dursley first notice a tabby cat doing on the corner of Privet Drive?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "hp-book1-ch1-4",
+        "page": 13,
+        "evidence": "It was on the corner of the street that he noticed the first sign of something\npeculiar — a cat reading a map."
+      }
+    ],
+    "expected_answer": "He noticed a tabby cat reading a map on the corner of Privet Drive."
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "How many times did Dumbledore click his Put-Outer to turn off all the street lamps on Privet Drive?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "hp-book1-ch1-4",
+        "page": 18,
+        "evidence": "Twelve times he clicked the Put-Outer,\nuntil the only lights left on the whole street were two tiny pinpricks in the\ndistance"
+      }
+    ],
+    "expected_answer": "He clicked the Put-Outer twelve times."
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "In Chapter 1: The Boy Who Lived, who lent Hagrid the flying motorcycle he used to bring baby Harry to Privet Drive?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "hp-book1-ch1-4",
+        "page": 23,
+        "evidence": "Young Sirius Black lent it to me."
+      }
+    ],
+    "expected_answer": "Young Sirius Black lent the motorcycle to Hagrid.",
+    "filter": {
+      "chapter": "Chapter 1: The Boy Who Lived"
+    }
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "What did Dumbledore's unusual pocket watch have instead of numbers?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "hp-book1-ch1-4",
+        "page": 21,
+        "evidence": "It had\ntwelve hands but no numbers; instead, little planets were moving around the\nedge."
+      }
+    ],
+    "expected_answer": "It had twelve hands and little planets moving around the edge instead of numbers."
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "Where inside the Dursleys' house did Harry sleep for nearly ten years?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "hp-book1-ch1-4",
+        "page": 27,
+        "evidence": "Harry was used to spiders,\nbecause the cupboard under the stairs was full of them, and that was where he\nslept."
+      }
+    ],
+    "expected_answer": "He slept in the cupboard under the stairs."
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "Why did the Dursleys end up taking Harry to the zoo on Dudley's birthday instead of leaving him with Mrs. Figg?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "hp-book1-ch1-4",
+        "page": 29,
+        "evidence": "Mrs. Figg’s broken her leg. She can’t take\nhim."
+      }
+    ],
+    "expected_answer": "Mrs. Figg had broken her leg and could not look after Harry, and nobody else was available."
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question": "In Chapter 2: The Vanishing Glass, what happened when Aunt Petunia tried to force Dudley's old brown sweater with orange puff balls over Harry's head?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "hp-book1-ch1-4",
+        "page": 31,
+        "evidence": "The harder she tried\nto pull it over his head, the smaller it seemed to become, until finally it might\nhave fitted a hand puppet, but certainly wouldn’t fit Harry."
+      }
+    ],
+    "expected_answer": "The sweater kept shrinking until it was tiny enough to fit a hand puppet and could not fit Harry.",
+    "filter": {
+      "chapter": "Chapter 2: The Vanishing Glass"
+    }
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question": "What did the sign next to the boa constrictor's tank say about where the snake came from?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "hp-book1-ch1-4",
+        "page": 34,
+        "evidence": "Boa Constrictor, Brazil."
+      }
+    ],
+    "expected_answer": "The sign said Boa Constrictor, Brazil (and noted it was bred in the zoo)."
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "Which secondary school was Harry supposed to attend in September, and what was Aunt Petunia doing to prepare his uniform?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "hp-book1-ch1-4",
+        "page": 38,
+        "evidence": "some of Dudley’s\nold things gray for you."
+      }
+    ],
+    "expected_answer": "Harry was going to Stonewall High, and Aunt Petunia was dyeing Dudley's old clothes gray in a tub for his uniform."
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "What animals appeared on the purple wax seal on the back of Harry's first letter?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "hp-book1-ch1-4",
+        "page": 40,
+        "evidence": "a purple wax\nseal bearing a coat of arms; a lion, an eagle, a badger, and a snake\nsurrounding a large letter H."
+      }
+    ],
+    "expected_answer": "A lion, an eagle, a badger, and a snake surrounding a large letter H."
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "In Chapter 3: The Letters from No One, how did twenty-four letters get inside the Dursleys' house on Saturday?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "hp-book1-ch1-4",
+        "page": 44,
+        "evidence": "Twenty-four letters to Harry\nfound their way into the house, rolled up and hidden inside each of the two\ndozen eggs that their very confused milkman had"
+      }
+    ],
+    "expected_answer": "They were rolled up and hidden inside two dozen eggs delivered by the milkman through the living room window.",
+    "filter": {
+      "chapter": "Chapter 3: The Letters from No One"
+    }
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "What address was written on the letters delivered to Harry at the Railview Hotel?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "hp-book1-ch1-4",
+        "page": 46,
+        "evidence": "Mr. H. Potter\nRoom 17\nRailview Hotel\nCokeworth"
+      }
+    ],
+    "expected_answer": "Mr. H. Potter, Room 17, Railview Hotel, Cokeworth."
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question": "What message was written in green icing on the birthday cake Hagrid brought Harry?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "hp-book1-ch1-4",
+        "page": 51,
+        "evidence": "Inside was a large, sticky\nchocolate cake with Happy Birthday Harry written on it in green icing."
+      }
+    ],
+    "expected_answer": "Happy Birthday Harry."
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "By what date did Hogwarts ask Harry to send his reply owl, and when did the school term begin?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "hp-book1-ch1-4",
+        "page": 55,
+        "evidence": "Term begins on September 1. We await your owl by no later than July\n31."
+      }
+    ],
+    "expected_answer": "They awaited his owl by no later than July 31, and term began on September 1."
+  },
+  {
+    "id": "q16",
+    "split": "test",
+    "question": "What peculiar events were reported on the evening television news that made Mr. Dursley anxious?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "hp-book1-ch1-4",
+        "page": 16,
+        "evidence": "instead of the rain\nI promised yesterday, they’ve had a downpour of shooting stars!"
+      }
+    ],
+    "expected_answer": "The news reported hundreds of owls flying in broad daylight and downpours of shooting stars instead of rain across Britain."
+  },
+  {
+    "id": "q17",
+    "split": "test",
+    "question": "In Chapter 2: The Vanishing Glass, what did the boa constrictor hiss to Harry as it slithered out of its tank?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "hp-book1-ch1-4",
+        "page": 34,
+        "evidence": "Brazil, here I come. . . . Thanksss, amigo."
+      }
+    ],
+    "expected_answer": "\"Brazil, here I come. . . . Thanksss, amigo.\"",
+    "filter": {
+      "chapter": "Chapter 2: The Vanishing Glass"
+    }
+  },
+  {
+    "id": "q18",
+    "split": "test",
+    "question": "Why did Harry fail in his plan to sneak downstairs at six o'clock in the morning to intercept the postman?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "hp-book1-ch1-4",
+        "page": 44,
+        "evidence": "Uncle Vernon had been lying at\nthe foot of the front door in a sleeping bag, clearly making sure that Harry\ndidn’t do exactly what he’d been trying to do."
+      }
+    ],
+    "expected_answer": "He stepped on Uncle Vernon's face because Uncle Vernon was sleeping in a sleeping bag at the foot of the front door to stop him."
+  },
+  {
+    "id": "q19",
+    "split": "test",
+    "question": "What food rations did Uncle Vernon bring for everyone at the broken-down shack on the rock?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "hp-book1-ch1-4",
+        "page": 48,
+        "evidence": "Uncle Vernon’s rations turned out to be a bag of chips each and four\nbananas."
+      }
+    ],
+    "expected_answer": "A bag of chips each and four bananas."
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "question": "In Chapter 4: The Keeper of the Keys, how did Hagrid explain what the word 'Muggle' means?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "hp-book1-ch1-4",
+        "page": 56,
+        "evidence": "A Muggle,” said Hagrid, “it’s what we call nonmagic folk like them."
+      }
+    ],
+    "expected_answer": "Hagrid explained that 'Muggle' is what wizards call nonmagic folk.",
+    "filter": {
+      "chapter": "Chapter 4: The Keeper of the Keys"
+    }
+  },
+  {
+    "id": "q21",
+    "split": "dev",
+    "question": "What form did Harry Potter’s Patronus take when he drove away the Dementors by the lake?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Dementors and the Patronus charm appear in Book 3 (Prisoner of Azkaban), not in Book 1 Chapters 1–4.",
+    "gold": []
+  },
+  {
+    "id": "q22",
+    "split": "dev",
+    "question": "Who secretly placed Harry Potter’s name into the Goblet of Fire for the Triwizard Tournament?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The Goblet of Fire and Triwizard Tournament occur in Book 4, outside Book 1 Chapters 1–4.",
+    "gold": []
+  },
+  {
+    "id": "q23",
+    "split": "test",
+    "question": "How did Harry Potter destroy Tom Riddle’s diary inside the Chamber of Secrets?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "The Chamber of Secrets and Tom Riddle’s diary appear in Book 2, not in Book 1 Chapters 1–4.",
+    "gold": []
+  },
+  {
+    "id": "q24",
+    "split": "test",
+    "question": "Which Horcrux did Ron Weasley destroy with the Sword of Gryffindor in the Forest of Dean?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Horcruxes and the Forest of Dean events occur in Book 7 (Deathly Hallows), not in Book 1 Chapters 1–4.",
+    "gold": []
+  }
+]
